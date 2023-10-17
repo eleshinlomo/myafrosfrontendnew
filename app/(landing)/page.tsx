@@ -21,7 +21,7 @@ import { cn } from "@/lib/utils"
 
 const LandingPage = () => {
   return (
-    
+  
     <div className="h-full  flex flex-col bg-black/80 text-white
     justify-center items-center overflow-hidden border border-b-gray-100
     ">
