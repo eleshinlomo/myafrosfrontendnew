@@ -1,6 +1,5 @@
 "use client"
 import Image from 'next/image'
-import { UserButton } from '@clerk/nextjs'
 import { ArrowRight, Code, CodeIcon, ImageIcon, MessageSquare, MusicIcon, VideoIcon } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { cn } from '@/lib/utils'

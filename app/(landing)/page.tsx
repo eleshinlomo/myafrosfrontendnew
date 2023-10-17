@@ -91,13 +91,13 @@ const LandingPage = () => {
     <div className="h-full  flex  justify-center items-center gap-3 z-10">
         
         
-        <Link href="/sign-in">
+        <Link href="/dashboard">
         <Button>
          Sign In
         </Button>
         </Link>
 
-        <Link href="/sign-up">
+        <Link href="/dashboard">
         <Button>
          Sign Up
         </Button>
