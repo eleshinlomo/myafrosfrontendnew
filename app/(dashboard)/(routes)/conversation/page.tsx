@@ -45,7 +45,8 @@ const ConversationPage = () => {
         
          const newMessages = [...messages, userMessage]
          setMessages(newMessages)
-         const API_URL = 'http://localhost:8000/api/myafroschatbot/'
+         const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
+         const API_URL = `${BASE_URL}/myafroschatbot/`
          await fetch(API_URL, {
             mode: 'cors',
             method: 'POST',

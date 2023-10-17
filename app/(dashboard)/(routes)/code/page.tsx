@@ -47,8 +47,8 @@ const CodePage = () => {
          const newMessages = [...messages, userMessage]
          setMessages(newMessages)
 
-         const LOCAL_URL = process.env.NEXT_PUBLIC_API_LOCAL_URL
-         const API_URL = `${LOCAL_URL}/code/`
+         const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
+         const API_URL = `${BASE_URL}/code/`
          await fetch(API_URL, {
             mode: 'cors',
             method: 'POST',

@@ -3,7 +3,7 @@
 import {useState, useEffect} from 'react'
 import { Menu} from "lucide-react"
 import { Button } from "./ui/button"
-import Sidebar from "./Sidebar"
+import Sidebar from "./sidebar"
 import { SheetContent, Sheet, SheetTrigger } from "./ui/sheet"
 
 
