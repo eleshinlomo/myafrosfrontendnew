@@ -1,0 +1,426 @@
+html{
+    font-size: 62.5%;
+  }
+  
+  .img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  body{
+    margin: 0;
+    font-family: monospace;
+  }
+  
+  
+  .rounded-btn{
+    border-radius: 10em;
+    background-color: crimson;
+    color: white;
+    
+  }
+   
+  
+  
+  .logo{
+    height: 6rem;
+    width: 6rem;
+  }
+  .overlay {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  }
+  
+  .wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    position: static;
+  }
+  
+  /* Nav Bar */
+  
+  nav {
+    margin: 4em;
+  }
+  
+  nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 3.4em;
+  margin: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.5em;
+    position: relative;
+  }
+  
+  nav ul li a.active:before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 1px;
+    border-bottom: 2px solid crimson;
+    bottom: -6px;
+  
+  }
+  
+  nav ul li a::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid grey;
+    bottom: -6px;
+    transition: .3s;
+  
+  }
+  
+  nav ul li a:hover::before{
+  width: 50%;
+  }
+  
+  /* Chatbot */
+  
+  .chatbot-btn{
+    position: fixed;
+    top: 70%;
+    left: 86%;
+    z-index:1000;
+    width: auto;
+  }
+  
+  main {
+    display: flex;
+    gap: 8em;
+    margin-top: 11em;
+    font-family: monospace;
+  }
+  
+  .left-col {
+    width: 50%;
+  }
+  
+  .right-col {
+    flex-grow: 1;
+  }
+  
+  h1 {
+    font-size: 5.2rem;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .subhead {
+    font-size: 1.5rem;
+  }
+  .cta-btns {
+    display: flex;
+    gap: 2em;
+    margin: 5em 0;
+  }
+  
+  
+  
+  .primary-cta {
+    background-color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: Poppins;
+    text-decoration: none;
+    color: white;
+    padding: 1em 1em;
+    border-radius: 1.9em;
+    margin: 0;
+  
+  }
+  
+  .primary-cta:hover{
+    background-color: lightblue;
+    color: black;
+  }
+  .secondary-cta {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1em 0;
+  }
+  
+  .secondary-cta svg {
+    width:  20px;
+    transition: transform .3s;
+  }
+  
+  .secondary-cta:hover svg {
+    transform: translateX(20px);
+  }
+  
+  .secondary-cta:hover {
+    text-decoration: underline;
+  }
+  
+  .news{
+    display: flex;
+    color: black;
+    gap: 2em;
+    padding: 5em;
+    border: 2px solid blue;
+    border-radius: 1.9em;
+    position: relative;
+  }
+  
+  .news::before {
+    position: absolute;
+    content: "";
+    background: url('../public/images/tree-1781554.svg');
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: -20px;
+    z-index: 2;
+  }
+  
+  p.years {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 100;
+    line-height: 100%;
+  }
+  
+  p.details {
+    font-size: 1.4rem;
+    margin: 0;
+    
+  }
+  
+  /* Right column gallery */
+  
+  .right-col {
+    display: grid;
+    gap: 2.3em;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: 
+    "left ."
+    "left .";
+  }
+  
+  .card {
+    border-radius: 5em;
+    padding: 1.1em;
+    display: flex;
+    align-items: end;
+    background-size: 190%;
+    transition: background-size 800ms;
+    position: relative;
+  }
+  
+  .card:hover{
+    background-size: 160%;
+  }
+  
+  .card1 {
+    grid-area: left;
+    background-image: url('../public/images/girl1.png');
+    position: relative;
+  }
+  
+  .card1::before{
+    position: absolute;
+    content: "";
+    /* background: url('../public/images/bubble.png') no-repeat; */
+    left: 40px;
+    top: 20px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  
+  }
+  
+  .card2 {
+    background-image: url('../public/images/girl2.png');
+    
+  }
+  
+  .card3 {
+   
+    background-image: url('../public/images/anticent_a_cute_AI_agent_at_a_work_desk_76ed2f23-126d-4479-9859-0930804b3433.png');
+  }
+  
+  .card-details {
+    position: absolute;
+    background-color: white;
+    border-radius: 2em;
+    padding: 2em;
+    margin: 2em;
+    left: 10%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 400ms;
+    
+    
+  }
+  
+  
+  
+  .card-details:hover{
+    transform: translateY(-20px);
+  }
+  
+  .card-details a{
+    
+    color: black;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bolder;
+  }
+  
+  .card-details p{
+    color: black;
+    text-decoration: none;
+    font-size: 1.6rem; 
+  }
+  
+  .card-details .ai-btn{
+  color: white;
+  background-color: black;
+  padding: .3em .7em;
+  border-radius: 1em;
+  }
+  
+  .client-logo{
+    height: 10em;
+    width: 10em;
+  }
+  
+  .web-background{
+    background-image: url('../public/images/ai_web.png');
+  }
+  
+  footer{
+    width: 100%;
+    height: 20em;
+    margin: 1rem auto;
+    background-color: black;
+    border-radius: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    place-items: center;
+    /* flex-direction: row;
+    justify-content: space-around;
+    align-items: center; */
+    /* background-image: url('../public//images/girl1.png'); */
+    transition: 800ms;
+  }
+  
+  
+  
+  footer ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.9rem;
+    
+  }
+  
+  footer .footer-items{
+    position: relative;
+    color: white;
+    padding: 0 1em;
+    border-radius: 2em;
+    display: flex;
+   
+  }
+  
+  .footer-chatbot-btn{
+    position: absolute;
+    left: 80%;
+  }
+  
+  footer:hover{
+    background-color: grey;
+  }
+  /* mobile  */
+  
+  
+  @media (max-width: 1000px){
+    .wrapper{
+      display: block;
+      margin: 0 auto;
+      padding: 0 1em;
+    }
+    header{
+      display: block;
+    }
+  
+    nav{
+      display: none;
+    }
+  
+    main{
+      display: block;
+      padding: 1em;
+    }
+  
+    .card{
+      display: block;
+      margin-top: 2em;
+      height: 30em;
+      background-size: 140%;
+    }
+  
+    .left-col{
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      
+    }
+  
+    .left-col h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  
+    .right-col{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .news{
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .primary-cta{
+      font-size: 1.5rem;
+      margin-top: .7em;
+      height: 5em;
+      width: 12em;
+      padding-top: 1.5em;
+      line-height: 100%;
+    }
+  
+    .chatbot-btn{
+      top:20%;
+      left: 70%
+    }
+  }
