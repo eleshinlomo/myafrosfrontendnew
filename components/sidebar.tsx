@@ -4,8 +4,10 @@ import Link from "next/link";
 import Image from 'next/image'
 import { Montserrat} from "next/font/google";
 import { cn } from "@/lib/utils";
-import { Code, CodeIcon, ImageIcon, LayoutDashboard, MessageSquare, Music2Icon, Settings, VideoIcon } from "lucide-react";
+import { Code, CodeIcon, EyeIcon, ImageIcon, LayoutDashboard, MenuIcon, MessageSquare, Music2Icon, Settings, VideoIcon } from "lucide-react";
 import {usePathname} from 'next/navigation'
+import { AvatarImage } from "./ui/avatar";
+import { DIRTY } from "zod";
 
 
 
@@ -47,6 +49,18 @@ const routes = [
         href: "/music",
         color: "text-purple-500"
         },
+        {
+          label: "AI Girlfriend",
+          icon: EyeIcon,
+          href: "/girlfriend",
+          color: "text-grey-500"
+          },
+          {
+            label: "AI Boyfriend",
+            icon: MenuIcon,
+            href: "/boyfriend",
+            color: "text-grey-500"
+            },
         {
           label: "Code Generation",
           icon: CodeIcon,
