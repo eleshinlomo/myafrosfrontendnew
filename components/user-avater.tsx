@@ -7,7 +7,7 @@ export const UserAvatar = ()=>{
     return (
         
             <Avatar className="h-8 w-8">
-                <AvatarImage src='' />
+                {/* <AvatarImage src='' /> */}
 
                 <AvatarFallback>
                   You
