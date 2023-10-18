@@ -1,4 +1,5 @@
 "use client"
+import {useEffect, useState} from 'react'
 import { Button } from "@/components/ui/button"
 import  Link  from "next/link"
 import Image from "next/image"
@@ -20,6 +21,32 @@ import { cn } from "@/lib/utils"
 
 
 const LandingPage = () => {
+  const [message, setMessage] = useState<string | null>(null)
+
+  const getTest = async ()=>{
+      await fetch('http://localhost:8000/api/test/', {
+        method: 'GET',
+        mode: 'cors',
+        headers: {'Content-Type': 'application/json'}
+
+      })
+      .then((res)=>{
+        if(!res) throw new Error("Network error")
+        return res.json()
+      })
+      .then((data)=>{
+        console.log(data)
+        setMessage(data.message)
+      }).catch((err)=>{
+        console.log(err)
+      })
+  }
+
+  useEffect(()=>{
+    getTest()
+  }, [])
+
+
   return (
   
     <div className="h-full  flex flex-col bg-black/80 text-white
@@ -103,7 +130,9 @@ const LandingPage = () => {
         </Button>
         </Link>
 
-        
+
+
+        <div>{message ?(<h3>{message}</h3>):null}</div>
 
         
         
