@@ -23,6 +23,7 @@
     "next": "13.4.12",
     "react": "^18",
     "react-dom": "^18",
+    "react-google-button": "^0.7.2",
     "react-hook-form": "^7.47.0",
     "react-markdown": "^9.0.0",
     "tailwind-merge": "^1.14.0",

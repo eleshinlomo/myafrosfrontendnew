@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import { ArrowRight, Code, CodeIcon, ImageIcon, MessageSquare, MusicIcon, VideoIcon } from 'lucide-react'
+import { ArrowRight, Code, CodeIcon, EyeIcon, ImageIcon, MenuIcon, MessageSquare, MusicIcon, VideoIcon } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 import {useRouter} from 'next/navigation'
@@ -9,12 +9,24 @@ import {useRouter} from 'next/navigation'
 
 const tools = [
   {
-    label: "Conversation",
+    label: "General Conversation",
     icon: MessageSquare,
     color: "text-pink-500",
     bgColor: "bg-violet-500/10",
     href: "/conversation"
   },
+  {
+    label: "AI Girlfriend",
+    icon: EyeIcon,
+    href: "/girlfriend",
+    color: "text-grey-500"
+    },
+    {
+      label: "AI Boyfriend",
+      icon: MenuIcon,
+      href: "/boyfriend",
+      color: "text-grey-500"
+      },
   {
     label: "Image Generation",
     icon: ImageIcon,
@@ -36,6 +48,7 @@ const tools = [
     bgColor: "bg-violet-500/10",
     href: "/music"
   },
+  
   {
     label: "Code Generation",
     icon: CodeIcon,

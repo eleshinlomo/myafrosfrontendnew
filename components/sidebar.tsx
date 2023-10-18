@@ -24,11 +24,24 @@ const routes = [
   color: "text-grey-500"
   },
   {
-    label: "Conversation",
+    label: "General Conversation",
     icon: MessageSquare,
     href: "/conversation",
     color: "text-pink-500"
     },
+
+    {
+      label: "AI Girlfriend",
+      icon: EyeIcon,
+      href: "/girlfriend",
+      color: "text-grey-500"
+      },
+      {
+        label: "AI Boyfriend",
+        icon: MenuIcon,
+        href: "/boyfriend",
+        color: "text-grey-500"
+        },
 
   {
     label: "Image Generation",
@@ -49,18 +62,7 @@ const routes = [
         href: "/music",
         color: "text-purple-500"
         },
-        {
-          label: "AI Girlfriend",
-          icon: EyeIcon,
-          href: "/girlfriend",
-          color: "text-grey-500"
-          },
-          {
-            label: "AI Boyfriend",
-            icon: MenuIcon,
-            href: "/boyfriend",
-            color: "text-grey-500"
-            },
+       
         {
           label: "Code Generation",
           icon: CodeIcon,

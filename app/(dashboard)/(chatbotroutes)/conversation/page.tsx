@@ -46,7 +46,7 @@ const ConversationPage = () => {
          const newMessages = [...messages, userMessage]
          setMessages(newMessages)
          const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
-         const API_URL = `${BASE_URL}/myafroschatbot/`
+         const API_URL = `${BASE_URL}/conversation/`
          await fetch(API_URL, {
             mode: 'cors',
             method: 'POST',
@@ -87,7 +87,7 @@ const ConversationPage = () => {
     <div>
         <Heading
         title='Conversation'
-        description = 'Our most advanced conversation AI model'
+        description = 'I have access to the web and can converse in real-time about trending topics'
         icon={MessageSquare}
         iconColor='text-violet-500'
         bgColor='bg-violet-500/10'
@@ -112,7 +112,7 @@ const ConversationPage = () => {
               focus=visible:ring-transparent
               focus-visible:ring-0'
               disabled={isLoading}
-              placeholder='How do I start a business?'
+              placeholder='Safest city in United States to raise kids?'
               {...field}
                />
                </FormControl>

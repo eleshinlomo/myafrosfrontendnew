@@ -16,36 +16,13 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
+import GoogleButton from 'react-google-button'
 
 
 
 
 const LandingPage = () => {
-  const [message, setMessage] = useState<string | null>(null)
-  const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
-  const getTest = async ()=>{
-      await fetch(`${BASE_URL}/test/`, {
-        method: 'GET',
-        mode: 'cors',
-        headers: {'Content-Type': 'application/json'}
-
-      })
-      .then((res)=>{
-        if(!res) throw new Error("Network error")
-        return res.json()
-      })
-      .then((data)=>{
-        console.log(data)
-        setMessage(data.message)
-      }).catch((err)=>{
-        console.log(err)
-      })
-  }
-
-  useEffect(()=>{
-    getTest()
-  }, [])
-
+  
 
   return (
   
@@ -53,7 +30,6 @@ const LandingPage = () => {
     justify-center items-center overflow-hidden border border-b-gray-100
     ">
       
-
 
       <div className="hidden lg:flex mt-10 text-black">
        
@@ -100,18 +76,14 @@ const LandingPage = () => {
 </NavigationMenu>
 </div>
 
- <div className="flex flex-col flex-1 justify-center items-center p-4">
+ <div className="flex flex-col  justify-center items-center my-4">
   <p className=" mt-20">Do everything with AI</p>
-  <h6 className="p-4 mt-10">While we are currently busy moving things around and
-     adding new features to our website,
   
-    feel free to sign up and enjoy all the AI services we offer.
-  </h6>
  </div>
 
- <div>
+ <div className='flex flex-col  justify-center items-center'>
   <h1>MY AFROS - WE ARE REBRANDING</h1>
-  <h2 className="mt-5 text-base ">SIGN UP TAKES 1 MIN</h2>
+  <h2 className="mt-5 text-base ">CHECK US OUT</h2>
  </div>
 
       
@@ -120,19 +92,19 @@ const LandingPage = () => {
         
         <Link href="/dashboard">
         <Button>
-         Sign In
+         SEE MORE
         </Button>
         </Link>
 
         <Link href="/dashboard">
         <Button>
-         Sign Up
+         SEE MORE
         </Button>
         </Link>
 
+         {/* <GoogleButton /> */}
 
-
-        <div>{message ?(<h3>{message}</h3>):null}</div>
+        
 
         
         
