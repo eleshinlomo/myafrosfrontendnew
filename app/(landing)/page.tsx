@@ -22,9 +22,9 @@ import { cn } from "@/lib/utils"
 
 const LandingPage = () => {
   const [message, setMessage] = useState<string | null>(null)
-
+  const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
   const getTest = async ()=>{
-      await fetch('http://localhost:8000/api/test/', {
+      await fetch(`${BASE_URL}/test/`, {
         method: 'GET',
         mode: 'cors',
         headers: {'Content-Type': 'application/json'}
