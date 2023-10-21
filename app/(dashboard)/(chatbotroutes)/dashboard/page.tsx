@@ -4,6 +4,7 @@ import { ArrowRight, Code, CodeIcon, EyeIcon, ImageIcon, MenuIcon, MessageSquare
 import { Card } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 import {useRouter} from 'next/navigation'
+import { useState } from 'react'
 
 
 
@@ -13,7 +14,7 @@ const tools = [
     icon: MessageSquare,
     color: "text-pink-500",
     bgColor: "bg-violet-500/10",
-    href: "/conversation"
+    href: "/general"
   },
   {
     label: "AI Girlfriend",
@@ -57,8 +58,13 @@ const tools = [
     },
 ]
 const DashboardPage = ()=>{
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+
   const router = useRouter()
   return (
+
+    
     <div>
        <div className='mb-8 space-y-4'>
         <h2 className='text-2xl md:text-4xl font-bold text-center'>
@@ -95,7 +101,10 @@ const DashboardPage = ()=>{
         )
        }
        </div>
+
     </div>
+ 
+      
   )
 }
 

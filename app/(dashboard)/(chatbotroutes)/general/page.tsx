@@ -46,7 +46,7 @@ const ConversationPage = () => {
          const newMessages = [...messages, userMessage]
          setMessages(newMessages)
          const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
-         const API_URL = `${BASE_URL}/conversation/`
+         const API_URL = `${BASE_URL}/general/`
          await fetch(API_URL, {
             mode: 'cors',
             method: 'POST',
@@ -86,7 +86,7 @@ const ConversationPage = () => {
   return (
     <div>
         <Heading
-        title='Conversation'
+        title='General Conversation'
         description = 'I have access to the web and can converse in real-time about trending topics'
         icon={MessageSquare}
         iconColor='text-violet-500'
@@ -149,7 +149,7 @@ const ConversationPage = () => {
                  )}
     
                  >
-                    {message.role == 'user' ? <UserAvatar /> : <BotAvatar />}
+                {message.role == 'user' ? <UserAvatar /> : <BotAvatar />}
                 <p className='text-sm'>
                  {message.content}
                  </p>

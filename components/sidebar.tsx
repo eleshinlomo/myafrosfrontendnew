@@ -26,7 +26,7 @@ const routes = [
   {
     label: "General Conversation",
     icon: MessageSquare,
-    href: "/conversation",
+    href: "/general",
     color: "text-pink-500"
     },
 
@@ -84,7 +84,7 @@ const Sidebar = () => {
     bg-black text-white">
      
      <div className="px-3 py-2 flex-1">
-        <Link href="/dashboard" className="flex items-center 
+        <Link href="/" className="flex items-center 
         pl-3 mb-14">
         <div className="relative w-8 h-8 mr-4">
          <Image
