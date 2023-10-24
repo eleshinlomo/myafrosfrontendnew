@@ -47,7 +47,7 @@ const PrivacyPage = () => {
           <li>Opt out of certain data processing.</li>
           <li>Withdraw consent where applicable.</li>
         </ul>
-        To exercise your rights, please contact us using the information provided in the "Contact Us" section below.
+        To exercise your rights, please contact us using the information provided in the Contact Us section below.
       </p>
 
       <h2 className="text-2xl font-semibold mb-4">6. Sharing Your Information</h2>
