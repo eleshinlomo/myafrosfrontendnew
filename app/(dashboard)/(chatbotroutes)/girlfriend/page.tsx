@@ -2,7 +2,7 @@
 import {useState, useEffect} from 'react'
 import * as z from 'zod'
 import {Heading} from '@/components/heading'
-import {  MessageSquare } from 'lucide-react'
+import {  MessageSquare, PhoneCallIcon} from 'lucide-react'
 import {  useForm } from 'react-hook-form'
 import { formSchema } from './constants'
 import {zodResolver} from '@hookform/resolvers/zod'
@@ -16,6 +16,7 @@ import { cn } from '@/lib/utils'
 import { UserAvatar } from '@/components/user-avater'
 import { BotAvatar } from '@/components/BotAvatar'
 import { EmptyGirlfriend } from '@/components/emptygirlfriend'
+import {  Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 
 
 
@@ -47,7 +48,7 @@ const GirlfriendPage = () => {
          const newMessages = [...messages, userMessage]
          setMessages(newMessages)
          const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
-         const API_URL = `${BASE_URL}/myafroschatbot/`
+         const API_URL = `${BASE_URL}/girlfriend/`
          await fetch(API_URL, {
             mode: 'cors',
             method: 'POST',
@@ -86,13 +87,30 @@ const GirlfriendPage = () => {
     }
   return (
     <div>
+
+        <div className='flex'>
         <Heading
         title='AI Girlfriend'
-        description = 'Experience reality relationship with AI Girlfiend'
+        description = 'Experience reality relationship with AI Girlfriend'
         icon={MessageSquare}
         iconColor='text-violet-500'
         bgColor='bg-violet-500/10'
          />
+
+         <div>
+        <Sheet>
+        <SheetTrigger>
+         <Button className='mr-5' variant='outline' size='icon' asChild>
+          <PhoneCallIcon />
+         </Button>
+         </SheetTrigger>
+         <SheetContent side="right" className='bg-black text-white'>
+            <PhoneCallIcon /> Phone Conversation Coming soon...
+         </SheetContent>
+         </Sheet> 
+         </div>
+
+         </div>
 
          <div className='px-4 lg:px-8'>
           <div>
@@ -113,7 +131,7 @@ const GirlfriendPage = () => {
               focus=visible:ring-transparent
               focus-visible:ring-0'
               disabled={isLoading}
-              placeholder='What are you up to tonight...'
+              placeholder='Hey! Whatsup boo...'
               {...field}
                />
                </FormControl>
@@ -121,8 +139,10 @@ const GirlfriendPage = () => {
                )}
                />
                <Button className='col-span-12 lg:col-span-2 w-full' disabled={isLoading}>
-                Generate
+                Chat
                </Button>
+               
+               
              </form>
             </Form>
           </div>

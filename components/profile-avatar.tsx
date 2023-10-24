@@ -5,8 +5,14 @@ import { Button } from "./ui/button"
 import  Link  from "next/link"
 import { SheetContent, Sheet, SheetTrigger } from "./ui/sheet"
 
+
+
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
+
+
+
 export const ProfileAvatar = ()=>{
-const [userProfile, setUserProfile] = useState<[] | null>([])
+const [userProfile, setUserProfile] = useState< []>([])
 const [toggleBtn, setToggleBtn] = useState(false)
 
 const handleClose = ()=>{
@@ -17,30 +23,36 @@ const handleOpen = ()=>{
   setToggleBtn(true)
 }
 
-
+const GOOGLE_LOGOUT_URL = process.env.NEXT_PUBLIC_SSO_LOGOUT_URL
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
 
-  const handleUserProfile = async ()=>{
-    await fetch(`${BASE_URL}/userprofile/`, {
-     mode: 'cors',
-     method: 'GET',
-     credentials: 'include',
-     headers: {"Content-Type": 'application/json'}
-    })
-    .then((res)=>{
-       if(!res) throw new Error("No response from server")
-       return res.json()
-    })
+  
+const handleUserProfile = async ()=>{
+  
+  await fetch(`${BASE_URL}/userprofile/`, {
+   mode: 'cors',
+   method: 'GET',
+   credentials: 'include',
+   headers: {"Content-Type": 'application/json'}
+  })
+  .then((res)=>{
+      if (!res) throw new Error("Server error")
+      return res.json()
+  })
 
-   .then((data)=>{
-    console.log(data)
+  .then((data)=>{
     setUserProfile(data.message)
-   })
- }
+  })
+  
+}
 
- useEffect(()=>{
+useEffect(()=>{
   handleUserProfile()
- }, [])
+}, [])
+ 
+  
+
+ 
     
  
     return (
@@ -73,7 +85,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
           )}
           <div className='flex gap-1'>
           <Button asChild>
-            <Link href='http://localhost:8000/accounts/logout/'>Logout</Link>
+            <Link href={`${GOOGLE_LOGOUT_URL}`}>Logout</Link>
           </Button>
           <Button asChild>
             <Link href=''>Edit Profile</Link>

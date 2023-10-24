@@ -1,6 +1,8 @@
+"use client"
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -10,6 +12,8 @@ export const metadata: Metadata = {
   description: 'Create everything the smart way',
 }
 
+const GOOGLE_CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID
+
 export default function RootLayout({
   children,
 }: {
@@ -18,7 +22,9 @@ export default function RootLayout({
   return (
     
     <html lang="en">
+      
       <body className={inter.className}>{children}</body>
+     
     </html>
     
   )

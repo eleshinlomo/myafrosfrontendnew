@@ -6,6 +6,7 @@ import {Navbar} from "@/components/navbar";
 import { Button } from '@/components/ui/button';
 import  Link  from 'next/link';
 import PropTypes from 'prop-types'
+import { authChecker } from '@/components/auth';
 
 
 
@@ -17,11 +18,25 @@ const DashboardLayout = ({
 })=>{
 
     const [isLoggedIn, setIsLoggedIn] = useState(true)
+    const [user, setUser] = useState(null)
 
-    const BASE_URL = 'http://localhost:8000/accounts/logout'
-    const handleLogout = ()=>{
-      
-    }
+  // Check Authentication
+
+  useEffect(()=>{
+    try{
+    const response: any = authChecker()
+    if (! response)throw new Error("Server error") 
+      setUser(response.message)
+    console.log(user)
+      setIsLoggedIn(true)
+    
+  }
+  catch(err){
+    console.log(err)
+  }
+
+  }, [])  
+ 
 
     return(
          <div>

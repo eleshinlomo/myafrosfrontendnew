@@ -1,10 +1,12 @@
 "use client"
+import {useEffect, useState} from 'react'
 import Image from 'next/image'
 import { ArrowRight, Code, CodeIcon, EyeIcon, ImageIcon, MenuIcon, MessageSquare, MusicIcon, VideoIcon } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 import {useRouter} from 'next/navigation'
-import { useState } from 'react'
+import { authChecker } from '@/components/auth'
+
 
 
 
@@ -16,18 +18,21 @@ const tools = [
     bgColor: "bg-violet-500/10",
     href: "/general"
   },
+
+  {
+    label: "AI Boyfriend",
+    icon: MenuIcon,
+    href: "/boyfriend",
+    color: "text-grey-500"
+    },
+
   {
     label: "AI Girlfriend",
     icon: EyeIcon,
     href: "/girlfriend",
     color: "text-grey-500"
     },
-    {
-      label: "AI Boyfriend",
-      icon: MenuIcon,
-      href: "/boyfriend",
-      color: "text-grey-500"
-      },
+   
   {
     label: "Image Generation",
     icon: ImageIcon,
@@ -57,11 +62,24 @@ const tools = [
     color: "text-grey-500"
     },
 ]
+
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
+
+  
+
+
+
+
 const DashboardPage = ()=>{
 
   const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [user, setUser] = useState(null)
+
+ 
 
   const router = useRouter()
+
+  
   return (
 
     
