@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const TermsPage = () => {
     return (
-      <div className="container mx-auto p-8 text-white">
+      <div className="container mx-auto p-8 text-black ">
 
       <Button className="my-3" asChild>
           <Link href='/'>Back to Home</Link>
@@ -47,12 +47,9 @@ const TermsPage = () => {
         MyAfros and its affiliates shall not be liable for any indirect, incidental, or consequential damages. Your sole remedy is to discontinue using our services.
       </p>
 
-      <h2 className="text-2xl font-semibold mb-4">8. Governing Law</h2>
-      <p className="mb-4">
-        These terms are governed by the laws of [Your Jurisdiction]. Any disputes shall be resolved in the appropriate court within [Your Jurisdiction].
-      </p>
+      
 
-      <h2 className="text-2xl font-semibold mb-4">9. Contact Us</h2>
+      <h2 className="text-2xl font-semibold mb-4">8. Contact Us</h2>
       <p className="mb-4">
         For any questions or concerns regarding these Terms of Service, please contact us at:
         support@myafros.com

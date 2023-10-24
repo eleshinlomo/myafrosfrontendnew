@@ -29,7 +29,7 @@ export const PolicyAgreePopup = ()=>{
         {policyPopUpIsVisible ?
         <div className="space-y-4 flex flex-col md:flex md:flex-row gap-2 
         px-2  py-2 z-10
-        justify-center items-center  text-white">
+        justify-center items-center  text-black">
         
          <p>
          We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, 
@@ -55,7 +55,7 @@ export const PolicyAgreePopup = ()=>{
           different category headings to find out more and change our default 
           settings. However, blocking some types of cookies may impact your 
           experience of the site and the services we are able to offer.
-          <Button className='my-3' asChild><Link href='/privacy'>Read More</Link></Button>
+          <Button className='my-3' asChild><Link href='/privacy'>Read Privacy Policy</Link></Button>
           </p>
           <h3>Manage Consent</h3>
           <div>

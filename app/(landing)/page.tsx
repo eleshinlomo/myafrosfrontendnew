@@ -61,7 +61,7 @@ const handleErrorResponse = (response: void)=>{
   return (
     
     <div>
-      <div className='container h-full mx-auto  bg-black text-white'>
+      <div className='container h-full mx-auto  text-black'>
         
     <div className="  leading-10  flex flex-col
     gap-5 
@@ -69,7 +69,7 @@ const handleErrorResponse = (response: void)=>{
     ">
       
  <div className="flex flex-col  justify-center items-center my-4">
-  <p className=" mt-20">Do everything with AI</p>
+  <p className=" mt-20 xl md:text-2xl lg:text-3xl">DO EVERYTHING WITH AI</p>
   
  </div>
 
@@ -81,7 +81,9 @@ const handleErrorResponse = (response: void)=>{
 
 <div className='flex flex-col flex-wrap justify-center items-center  mt-10 
 '>
+  <div>
   <p>WHAT WOULD YOU LIKE TO DO?</p>
+  </div>
 <Sheet>
   <SheetTrigger className='flex flex-col justify-center items-center'>
     <Button variant='default' className='mt-6'>

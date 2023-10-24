@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const PrivacyPage = () => {
   return (
-    <div className="container mx-auto p-8 text-white">
+    <div className="container mx-auto p-8 text-black">
         <Button className="my-3" asChild>
           <Link href='/'>Back to Home</Link>
         </Button>
@@ -14,7 +14,10 @@ const PrivacyPage = () => {
 
       <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
       <p className="mb-4">
-        Welcome to MyAfros, a platform offering AI services. This Privacy Policy explains how we collect, use, and protect your personal information. By accessing or using our services, you consent to the practices described in this policy.
+        Welcome to MyAfros, a platform offering AI services. 
+        This Privacy Policy explains how we collect, use, 
+        and protect your personal information. By accessing or using our services,
+         you consent to the practices described in this policy.
       </p>
 
       <h2 className="text-2xl font-semibold mb-4">2. Information We Collect</h2>
@@ -36,7 +39,9 @@ const PrivacyPage = () => {
 
       <h2 className="text-2xl font-semibold mb-4">4. Data Security</h2>
       <p className="mb-4">
-        MyAfros takes data security seriously. We implement technical and organizational measures to safeguard your information, including encryption, access controls, and regular security assessments.
+        MyAfros takes data security seriously. We implement technical and organizational 
+        measures to safeguard your information, including encryption, access controls, 
+        and regular security assessments.
       </p>
 
       <h2 className="text-2xl font-semibold mb-4">5. Your Choices</h2>
@@ -47,12 +52,15 @@ const PrivacyPage = () => {
           <li>Opt out of certain data processing.</li>
           <li>Withdraw consent where applicable.</li>
         </ul>
-        To exercise your rights, please contact us using the information provided in the Contact Us section below.
+        To exercise your rights, please contact us using the information 
+        provided in the Contact Us section below.
       </p>
 
       <h2 className="text-2xl font-semibold mb-4">6. Sharing Your Information</h2>
       <p className="mb-4">
-        MyAfros may share your information with third parties, including service providers, affiliates, and legal authorities when required. We do not sell your data to third parties.
+        MyAfros may share your information with third parties, including service 
+        providers, affiliates, 
+        and legal authorities when required. We do not sell your data to third parties.
       </p>
 
       <h2 className="text-2xl font-semibold mb-4">7. Contact Us</h2>
