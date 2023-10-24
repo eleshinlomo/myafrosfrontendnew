@@ -101,7 +101,7 @@ const GirlfriendPage = () => {
         <Sheet>
         <SheetTrigger>
          <Button className='mr-5' variant='outline' size='icon' asChild>
-          <PhoneCallIcon className='bg-black' />
+          <PhoneCallIcon className='' />
          </Button>
          </SheetTrigger>
          <SheetContent side="right" className='bg-black text-white'>
