@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import  Link  from 'next/link';
 import PropTypes from 'prop-types'
 import { authChecker } from '@/components/auth';
+import Image from 'next/image'
 
 
 
@@ -18,24 +19,40 @@ const DashboardLayout = ({
 })=>{
 
     const [isLoggedIn, setIsLoggedIn] = useState(true)
+    const [isChecking, setIsChecking] = useState(true)
     const [user, setUser] = useState(null)
+
+
+ const loading = "Checking Authentication..."
 
   // Check Authentication
 
   useEffect(()=>{
+
+    const handleAuthChecker = async ()=>{
+
     try{
-    const response: any = authChecker()
+    
+    const response: any = await authChecker()
     if (! response)throw new Error("Server error") 
-      setUser(response.message)
-    console.log(user)
-      setIsLoggedIn(true)
+    setUser(response.message.username)
+    console.log(response.message)
+    setIsLoggedIn(true)
     
   }
   catch(err){
-    console.log(err)
+    // console.log(err)
+    setIsLoggedIn(true)
+  }finally {
+    setIsChecking(false)
   }
+}
+
+handleAuthChecker()
 
   }, [])  
+
+  const GOOGLE_LOGIN_URL = process.env.NEXT_PUBLIC_SSO_LOGIN_URL
  
 
     return(
@@ -50,15 +67,36 @@ const DashboardLayout = ({
             
            <main className="md:pl-72">
             <Navbar />
+          
             {children}
            </main>
         </div>:
 
-        <div className=''>
-            <p>You need to be logged in</p>
+
+        <div className='h-full mt-4 flex flex-col justify-center items-center gap-3'>
+            
+            {isChecking ?
+            <div>
+             <div className='text-center animate-spin'>
+             <Image src='/logo.png' alt='logo' width='50' height='50' />
+             </div>
+             {loading}
+            </div>:null
+            }
+            
+            
+            <p className='text leading-8'>You need to be logged in</p>
             <Link href='/'>
             <Button>Back to home</Button>
             </Link>
+
+        <Button className='flex gap-1' asChild>
+        <Link href={`${GOOGLE_LOGIN_URL}`}>
+        <Image src='/google_logo.png' alt='logo' width='20' height='20' />
+        Login with Google
+        </Link>
+        </Button> 
+
             </div>
 
          }

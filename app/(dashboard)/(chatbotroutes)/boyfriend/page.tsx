@@ -101,7 +101,7 @@ const GirlfriendPage = () => {
         <Sheet>
         <SheetTrigger>
          <Button className='mr-5' variant='outline' size='icon' asChild>
-          <PhoneCallIcon />
+          <PhoneCallIcon className='bg-black' />
          </Button>
          </SheetTrigger>
          <SheetContent side="right" className='bg-black text-white'>
@@ -126,9 +126,9 @@ const GirlfriendPage = () => {
                 render={({ field })=>(
                 
                <FormItem className="col-span-12 lg:col-span-10">
-               <FormControl className='M-0 P-0'>
+               <FormControl className='m-0 p-0'>
               <Input className='border-0 outline-none 
-              focus=visible:ring-transparent
+              focus=visible:ring-transparent text-black
               focus-visible:ring-0'
               disabled={isLoading}
               placeholder='Hey! Whatsup boo...'

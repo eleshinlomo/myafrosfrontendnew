@@ -15,6 +15,8 @@ import {
   SheetDescription } from "@/components/ui/sheet"
 import { CarIcon } from 'lucide-react'
 import {GoogleLogin} from '@react-oauth/google'
+import { PolicyAgreePopup } from '@/components/policyagreepopup'
+import { Footer } from '@/components/footer'
 
 
 
@@ -57,9 +59,13 @@ const handleErrorResponse = (response: void)=>{
 }, [])
 
   return (
-  
-    <div className=" leading-7 h-full  flex flex-col text-black
-    justify-center items-center overflow-hidden border border-b-gray-100
+    
+    <div>
+      <div className='container h-full mx-auto  bg-black text-white'>
+        
+    <div className="  leading-10  flex flex-col
+    gap-5 
+    justify-center items-center 
     ">
       
  <div className="flex flex-col  justify-center items-center my-4">
@@ -67,15 +73,15 @@ const handleErrorResponse = (response: void)=>{
   
  </div>
 
- <div className='flex flex-col  justify-center items-center 
+ <div className=' flex flex-col  justify-center items-center 
  xl '>
   <h1 className='text-blue'>MY AFROS - WE ARE REBRANDING</h1>
   <h2 className="mt-5 text-base ">CHECK US OUT</h2>
  </div>
 
-<div className='flex flex-col justify-center items-center  mt-10 
+<div className='flex flex-col flex-wrap justify-center items-center  mt-10 
 '>
-  <h2>WHAT WOULD YOU LIKE TO DO TODAY?</h2>
+  <p>WHAT WOULD YOU LIKE TO DO?</p>
 <Sheet>
   <SheetTrigger className='flex flex-col justify-center items-center'>
     <Button variant='default' className='mt-6'>
@@ -150,40 +156,36 @@ const handleErrorResponse = (response: void)=>{
   
 </div>
       
-    <div className="h-full  flex  justify-center items-center gap-3 z-10">
+    <div className="  flex flex-col  justify-center items-center gap-5">
         
         
         
-        {/* <Link 
-        className='flex gap-2 bg-black text-white pr-2'
-         href="http://localhost:8000/accounts/login/">
-        <Image src='/google_logo.png' alt='google logo' width='20' height='20' />
-        LOGIN WITH GOOGLE
-        </Link> */}
-
        
-
-       <Button className='flex gap-1' asChild>
+       <div className='flex flex-col justify-center items-center'>
+       <Button className='flex  gap-1' asChild>
         <Link href={`${GOOGLE_LOGIN_URL}`}>
         <Image src='/google_logo.png' alt='logo' width='20' height='20' />
         Login with Google
         </Link>
         </Button> 
-
-        {/* <GoogleLogin onSuccess={handleSuccesResponse} onError={handleErrorResponse} /> */}
-
+        <Button className=' mt-5 text-white'  asChild>
+          <Link href='/dashboard'>Skip Login For Now</Link>
+        </Button>
+        <Button className=' mt-5 text-white'  asChild>
+          <Link href='/terms'>Read Our Terms</Link>
+        </Button>
+        </div>
         
         
-
-       
-        
-
-         {/* <GoogleButton /> */}
-
-        
-
         
         
+    </div>
+    <div>
+          <Footer />
+        <PolicyAgreePopup />
+        </div>
+    </div>
+    
     </div>
     </div>
     
