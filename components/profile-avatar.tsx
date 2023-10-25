@@ -64,12 +64,13 @@ useEffect(()=>{
   const response: any = await authChecker()
   if (! response)throw new Error("Server error") 
   console.log(response.message)
+setIsLoggedIn(true)
   
   
 }
 catch(err){
   // console.log(err)
-  
+  setIsLoggedIn(false)
 }
 }
 

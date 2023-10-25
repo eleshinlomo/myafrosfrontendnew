@@ -18,7 +18,7 @@ const DashboardLayout = ({
     children: React.ReactNode;
 })=>{
 
-    const [isLoggedIn, setIsLoggedIn] = useState(true)
+    const [isLoggedIn, setIsLoggedIn] = useState(false)
     const [isChecking, setIsChecking] = useState(true)
     const [user, setUser] = useState(null)
 
@@ -42,7 +42,7 @@ const DashboardLayout = ({
   }
   catch(err){
     // console.log(err)
-    setIsLoggedIn(true)
+    setIsLoggedIn(false)
   }finally {
     setIsChecking(false)
   }

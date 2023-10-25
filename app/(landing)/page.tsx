@@ -31,7 +31,7 @@ const handleErrorResponse = (response: void)=>{
   console.log(response)
 }
   
-  const GOOGLE_LOGIN_URL = process.env.NEXT_PUBLIC_SSO_LOGIN_URL
+  const GOOGLE_LOGIN_URL = process.env.NEXT_PUBLIC_SSO_GOOGLE_LOGIN_URL
 
   const handleGoogleSSO = async ()=>{
    await fetch(`${GOOGLE_LOGIN_URL}`, {
@@ -170,9 +170,7 @@ const handleErrorResponse = (response: void)=>{
         Login with Google
         </Link>
         </Button> 
-        <Button className=' mt-5 text-white'  asChild>
-          <Link href='/dashboard'>Skip Login For Now</Link>
-        </Button>
+        
         <Button className=' mt-5 text-white'  asChild>
           <Link href='/terms'>Read Our Terms</Link>
         </Button>
