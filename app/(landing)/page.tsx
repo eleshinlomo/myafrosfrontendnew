@@ -31,7 +31,7 @@ const handleErrorResponse = (response: void)=>{
   console.log(response)
 }
   
-  const GOOGLE_LOGIN_URL = process.env.NEXT_PUBLIC_SSO_GOOGLE_LOGIN_URL
+  const GOOGLE_LOGIN_URL = process.env.NEXT_PUBLIC_SSO_DJANGO_LOGIN_URL
 
   const handleGoogleSSO = async ()=>{
    await fetch(`${GOOGLE_LOGIN_URL}`, {
