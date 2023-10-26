@@ -52,7 +52,7 @@ handleAuthChecker()
 
   }, [])  
 
-  const GOOGLE_LOGIN_URL = process.env.NEXT_PUBLIC_SSO_LOGIN_URL
+  const DJANGO_LOGIN_URL = process.env.NEXT_PUBLIC_SSO_DJANGO_LOGIN_URL
  
 
     return(
@@ -91,9 +91,9 @@ handleAuthChecker()
             </Link>
 
         <Button className='flex gap-1' asChild>
-        <Link href={`${GOOGLE_LOGIN_URL}`}>
+        <Link href={`${DJANGO_LOGIN_URL}`}>
         <Image src='/google_logo.png' alt='logo' width='20' height='20' />
-        Login with Google
+        Login
         </Link>
         </Button> 
 
