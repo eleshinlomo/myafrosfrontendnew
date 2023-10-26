@@ -166,8 +166,7 @@ const handleErrorResponse = (response: void)=>{
        <div className='flex flex-col justify-center items-center'>
        <Button className='flex  gap-1' asChild>
         <Link href={`${GOOGLE_LOGIN_URL}`}>
-        <Image src='/google_logo.png' alt='logo' width='20' height='20' />
-        Login with Google
+        Login Here
         </Link>
         </Button> 
         
