@@ -11,6 +11,7 @@ import Image from 'next/image'
 
 
 
+
 const DashboardLayout = ({
     
     children
@@ -34,9 +35,9 @@ const DashboardLayout = ({
     try{
     
     const response: any = await authChecker()
-    if (! response)throw new Error("Server error") 
-    setUser(response.message.username)
-    console.log(response.message)
+    if (! response)throw new Error("authChecker error") 
+    if(response.status === 200)
+    console.log(response)
     setIsLoggedIn(true)
     
   }
@@ -51,6 +52,12 @@ const DashboardLayout = ({
 handleAuthChecker()
 
   }, [])  
+
+
+  
+
+ 
+ 
 
   const DJANGO_LOGIN_URL = process.env.NEXT_PUBLIC_SSO_DJANGO_LOGIN_URL
  

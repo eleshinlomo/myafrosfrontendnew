@@ -5,6 +5,7 @@ import { Button } from "./ui/button"
 import  Link  from "next/link"
 import { SheetContent, Sheet, SheetTrigger } from "./ui/sheet"
 import { authChecker } from './auth'
+import { getUserProfile } from './auth'
 
 
 
@@ -28,55 +29,30 @@ const handleOpen = ()=>{
 const GOOGLE_LOGOUT_URL = process.env.NEXT_PUBLIC_SSO_LOGOUT_URL
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
 
-  
+
+// Get User Profile
 const handleUserProfile = async ()=>{
   
-  await fetch(`${BASE_URL}/userprofile/`, {
-   mode: 'cors',
-   method: 'GET',
-   credentials: 'include',
-   headers: {"Content-Type": 'application/json'}
-  })
-  .then((res)=>{
-      if (!res) throw new Error("Server error")
-      return res.json()
-  })
-
-  .then((data)=>{
-    setUserProfile(data.message)
-  })
+  const response: any = await getUserProfile()
+  if (!response) throw new Error("getUserProfile function error")
+  console.log(`${userProfile} is found`)
+  setUserProfile(response.message)
   
+}
+
+
+ // Check Authentication 
+
+const handleAuthCheck = async ()=>{
+   const response = await authChecker()
+   if (!response) throw new Error("authChecker error")
+   setIsLoggedIn(true)
 }
 
 useEffect(()=>{
   handleUserProfile()
+  handleAuthCheck()
 }, [])
-
-
- // Check Authentication
-
- useEffect(()=>{
-
-  const handleAuthChecker = async ()=>{
-
-  try{
-  
-  const response: any = await authChecker()
-  if (! response)throw new Error("Server error") 
-  console.log(response.message)
-setIsLoggedIn(true)
-  
-  
-}
-catch(err){
-  // console.log(err)
-  setIsLoggedIn(false)
-}
-}
-
-handleAuthChecker()
-
-}, [])  
  
   
 
