@@ -1,4 +1,4 @@
-import { GoogleLogin } from 'react-google-login';
+
 
 const Logout = () => {
 
@@ -13,14 +13,14 @@ const Logout = () => {
       
   return (
     <div>
-      <GoogleLogin
+      {/* <GoogleLogin
         clientId={clientId}
         buttonText="Logout with Google"
         onSuccess={responseGoogle}
         onFailure={responseGoogle}
         cookiePolicy={"single_host_origin"}
         isSignedIn={true}
-      />
+      /> */}
     </div>
   )
 }

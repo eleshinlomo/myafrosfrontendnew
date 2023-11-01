@@ -1,6 +1,5 @@
 // @ts-ignore
 import { useEffect } from "react"
-import { GoogleLogin } from 'react-google-login';
 // @ts-ignore
 import Cookies from 'js-cookie'
 
