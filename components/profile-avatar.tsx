@@ -1,3 +1,4 @@
+"use client"
 import {useState, useEffect} from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar"
 import { string } from "zod"
