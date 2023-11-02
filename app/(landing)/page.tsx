@@ -13,15 +13,13 @@ const HomePage = () => {
 
 
 
-      <div className='relative  text-white md:text-white
-      '>
 
-<div className='absolute h-[90vh] w-full z-[-20] opacity-100 md:opacity-100 '>
-          <Image src= '/bg/background-6824.gif' alt='bg image' fill  />
-        </div>
+      <div className=' px-4 py-4 bg-black'>
+
+<NewNavBar />
         
-       <div className='md:px-24 px-4'>
-      <NewNavBar />
+       <div className=' '>
+      
       <Hero />
       
       <Cta2Block />
