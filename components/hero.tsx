@@ -18,9 +18,8 @@ export const Hero = ()=>{
            <div className="text-center
            leading-8 py-8 mt-16 flex flex-col md:justify-end md:items-end">
            <p className="  text-lg font-bold
-           md:text-xl  ">
-            My name is 
-            Oluwaseun Olatunji!
+           md:text-xl">
+            See on-going projects below
             </p>
            </div>
               

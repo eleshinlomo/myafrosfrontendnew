@@ -14,8 +14,16 @@ export const ProjectPage = ()=>{
             route: 'https://www.fixupe.com'
         },
         {
-            projectname: "Date Me",
+            projectname: "Techcoy",
             position: 2,
+            usecase: "Blog",
+            image: '/projects/techcoy.png',
+            status: 'completed',
+            route: 'https://www.techcoy.com/'
+        },
+        {
+            projectname: "Date Me",
+            position: 3,
             usecase: "Dating Platform",
             image: '/projects/dateme.png',
             status: 'on-going',
