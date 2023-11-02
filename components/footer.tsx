@@ -86,7 +86,7 @@ px-2 items-center
       <div className='flex py-3'>
 
         <div className='flex gap-5'>
-            <Button  asChild>
+            <Button className='bg-blue-800'  asChild>
                 <a href='https://github.com/eleshinlomo/myafrosfrontendnew/tree/main'> View code on Github</a>
             </Button>
             <GithubIcon className='mt-2' />

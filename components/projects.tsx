@@ -60,7 +60,7 @@ export const ProjectPage = ()=>{
             <p className='text-l '>Project Frontend: {project.frontend}</p>
             <p className='text-l '>Project Backend: {project.backend}</p>  
             <p className='text-l '>Project Status: {project.status}</p>
-            <Button>
+            <Button className='bg-blue-800 mt-2' asChild>
                 <Link href={project.route}>View Project Website</Link>
             </Button>
 
