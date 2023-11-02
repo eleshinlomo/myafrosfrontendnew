@@ -39,7 +39,7 @@ export const ProjectPage = ()=>{
             </div>
 
 <div className='flex flex-col md:flex-row lg:flex-row
-         py-2 px-5 gap-20 justify-center items-center '>
+         py-6 px-5 gap-20 justify-center items-center '>
           {
             Projects.map((project, index)=>
 

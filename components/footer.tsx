@@ -10,6 +10,7 @@ import Image from 'next/image'
 //     MenubarTrigger,
 //   } from "@/components/ui/menubar"
 import { Button } from './ui/button'
+import { GithubIcon } from 'lucide-react'
   
 
 
@@ -83,8 +84,14 @@ px-2 items-center
       </div>
 
       <div className='flex py-3'>
-      <Image src="/images/visa_png.png" alt="logo" height={50} width={50} />
-      <Image src="/images/mastcard_logo.jpg" alt="logo" height={50} width={50} />
+
+        <div className='flex gap-5'>
+            <Button  asChild>
+                <a href='https://github.com/eleshinlomo/myafrosfrontendnew/tree/main'> View code on Github</a>
+            </Button>
+            <GithubIcon className='mt-2' />
+        </div>
+     
       </div>
 
       </div>

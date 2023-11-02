@@ -22,8 +22,9 @@ const HomePage = () => {
       
       <Hero />
       
-      <Cta2Block />
+      <CtaBlockPage />
       < ProjectPage />
+      <Cta2Block />
       
       </div>
       <Footer />

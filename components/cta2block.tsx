@@ -1,41 +1,33 @@
 import Link from "next/link"
 import { Button } from "./ui/button"
-import { BotIcon, ComputerIcon, PiIcon } from "lucide-react"
 
 export const Cta2Block = ()=>{
     return (
         <div>
-           
-            <div>
-           <div className=" text-center md:flex md:flex-col md:justify-end 
-            md:items-end px-2  gap-3 leading-8 text-muted-foreground ">
-                <div className="flex px-2 justify-center  md:justify-end md:items-end
-                
-                ">
-                <BotIcon />
-                <p className=" ">I use mostly React Based Frameworks on Frontend/Typescript</p>
-                </div>
+            <div className="text-center flex flex-col md:flex-row lg:flex:row gap-5
+             bg-white py-8 px-2">
 
-                <div className="flex px-2 justify-center    md:justify-end md:items-end">
-                <PiIcon />
-                <p className="">Backend I mostly use Python/Django & Node js</p>
-                </div>
-                <div className="flex justify-center   md:justify-end md:items-end">
-                <PiIcon />
-                <p className="">Databases: Postgres, Mysql, and MongoDB/Atlas</p>
-                </div>
-
-                <div className="flex justify-center md:flex  md:justify-end md:items-end">
-                <ComputerIcon />
-                <p className="">
-                    Docker and Rabbit for cloud production
+                <div>
+                <p className="text-3xl text-blue-800 py-4"> 
+                AWS, YES Please!
                 </p>
+                <p className="text-black py-4">I manage docker images and containers using
+                AWS while ensuring only secured ports are exposed</p>
+                
                 </div>
 
+                <div>
+                <p className="text-3xl text-blue-800 py-4 "> 
+                Cybersecurity conscious? Apparently, YES!
+                </p>
+                <p className="text-black py-4 text-center">
+                    I follow standards to ensure no data breach occurs or exposed ports
+                    are not attacked in app development.
+                </p>
+                
                 </div>
 
-                </div>
-
+            </div>
         </div>
     )
 }
