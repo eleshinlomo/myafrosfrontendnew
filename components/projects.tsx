@@ -21,7 +21,7 @@ export const ProjectPage = ()=>{
             usecase: "Blog",
             frontend: "Wordpress",
             backend: "Not Applicable",
-            image: '/projects/techcoy.png',
+            image: '/projects/techoynew.png',
             status: 'completed',
             route: 'https://www.techcoy.com/'
         },
