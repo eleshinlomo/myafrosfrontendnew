@@ -5,8 +5,8 @@ export const CtaBlockPage = ()=>{
         <div>
             <div className="flex flex-col justify-center items-center
               ">
-                <h3 className="text-3xl text-center">I am a Fullstack Developer</h3>
-                <p className="p-2 text-center">located in the EST Timezone.</p>
+                <h3 className="text-3xl text-center">Fullstack Developer</h3>
+                <p className="p-2 text-center">located in the DMV EST Timezone.</p>
                 
             </div>
         </div>
