@@ -60,13 +60,13 @@ px-2 items-center
 
 {/* 3rd Column */}
       <div className='flex flex-col'>
-      <p className='text-2xl'>Quick Links</p>
-        <Button variant='link'  className='text-blue-500'>
-            Service
+      <p className='text-2xl'>Terms & Service</p>
+        <Button variant='link'  className='text-blue-500' asChild>
+           <Link href='/privacy'>Privacy</Link>
         </Button>
 
-        <Button variant='link' className='text-blue-500'>
-            Terms
+        <Button variant='link' className='text-blue-500' asChild>
+        <Link href='/terms'>Terms</Link>
         </Button>
 
         <Button variant='link' className='text-blue-500'>
