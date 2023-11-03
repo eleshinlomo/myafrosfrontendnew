@@ -3,47 +3,49 @@ import { Button } from './ui/button'
 import Link from 'next/link'
 import { BotIcon } from 'lucide-react'
 
+
+export const Projects = [
+    {
+        projectname: "Fixupe",
+        icon: <BotIcon />,
+        usecase: "AI tools",
+        frontend: "Next js/Typscript",
+        backend: "Python/Django",
+        image: '/projects/fixupenew.png',
+        status: 'On-going',
+        database: 'postGreSQL/Pinecone',
+        cloud: 'Vercel',
+        route: 'https://www.fixupe.com'
+    },
+    {
+        projectname: "Techcoy",
+        icon: <BotIcon />,
+        usecase: "Blog",
+        frontend: "Wordpress",
+        backend: "Not Applicable",
+        image: '/projects/techoynew.png',
+        status: 'Completed',
+        database: 'Not Applicable',
+        cloud: 'AWS',
+        route: 'https://www.techcoy.com/'
+    },
+    {
+        projectname: "Date Me",
+        icon: <BotIcon />,
+        usecase: "Dating Platform",
+        frontend: "Next js/Typscript",
+        backend: "Python/Django",
+        image: '/projects/dateme.png',
+        database: 'postGreSQL/Pinecone',
+        cloud: 'Vercel',
+        status: 'On-going',
+        route: 'https://dateme.vercel.app'
+    },
+   
+]
+
 export const ProjectPage = ()=>{
 
-    const Projects = [
-        {
-            projectname: "Fixupe",
-            icon: <BotIcon />,
-            usecase: "AI tools",
-            frontend: "Next js/Typscript",
-            backend: "Python/Django",
-            image: '/projects/fixupenew.png',
-            status: 'On-going',
-            database: 'postGreSQL/Pinecone',
-            cloud: 'Vercel',
-            route: 'https://www.fixupe.com'
-        },
-        {
-            projectname: "Techcoy",
-            icon: <BotIcon />,
-            usecase: "Blog",
-            frontend: "Wordpress",
-            backend: "Not Applicable",
-            image: '/projects/techoynew.png',
-            status: 'Completed',
-            database: 'Not Applicable',
-            cloud: 'AWS',
-            route: 'https://www.techcoy.com/'
-        },
-        {
-            projectname: "Date Me",
-            icon: <BotIcon />,
-            usecase: "Dating Platform",
-            frontend: "Next js/Typscript",
-            backend: "Python/Django",
-            image: '/projects/dateme.png',
-            database: 'postGreSQL/Pinecone',
-            cloud: 'Vercel',
-            status: 'On-going',
-            route: 'https://dateme.vercel.app'
-        },
-       
-    ]
     return (
         <div>
 

@@ -1,6 +1,7 @@
 
 import Image from 'next/image'
 import { Button } from './ui/button'
+import { HomeMobileMenu } from './homemobilemenu'
 
 export const NewNavBar = ()=>{
     return (
@@ -11,6 +12,10 @@ export const NewNavBar = ()=>{
                 
                 <div className='relative w-24 h-12 '>
                     <Image src='/logo.png' alt='logo' fill />
+                </div>
+
+                <div>
+                 <HomeMobileMenu />
                 </div>
                 
                 <div className='hidden md:flex md:pt-3'>

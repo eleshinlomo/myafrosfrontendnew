@@ -1,4 +1,4 @@
-import { NewNavBar } from '@/components/newnavbar'
+import { NewNavBar } from '@/components/navbar'
 import React from 'react'
 import Image from 'next/image'
 import { Hero } from '@/components/hero'
