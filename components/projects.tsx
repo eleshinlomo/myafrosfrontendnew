@@ -1,14 +1,15 @@
 import Image from 'next/image'
 import { Button } from './ui/button'
 import Link from 'next/link'
+import { BotIcon } from 'lucide-react'
 
 export const ProjectPage = ()=>{
 
     const Projects = [
         {
             projectname: "Fixupe",
-            position: 1,
-            usecase: "Task tools",
+            icon: <BotIcon />,
+            usecase: "AI tools",
             frontend: "Next js/Typscript",
             backend: "Python/Django",
             image: '/projects/fixupenew.png',
@@ -19,7 +20,7 @@ export const ProjectPage = ()=>{
         },
         {
             projectname: "Techcoy",
-            position: 2,
+            icon: <BotIcon />,
             usecase: "Blog",
             frontend: "Wordpress",
             backend: "Not Applicable",
@@ -31,7 +32,7 @@ export const ProjectPage = ()=>{
         },
         {
             projectname: "Date Me",
-            position: 3,
+            icon: <BotIcon />,
             usecase: "Dating Platform",
             frontend: "Next js/Typscript",
             backend: "Python/Django",
@@ -56,8 +57,14 @@ export const ProjectPage = ()=>{
             Projects.map((project, index)=>
 
             <div key={index} className='flex flex-col gap-2'>
-        <p className='text-l text-center text-white pl-2 font-extrabold w-72 bg-blue-800 '>
+
+        <div className='flex text-md py-4  text-white justify-center items-center gap-2
+        pl-2 font-extrabold w-72 bg-blue-800'>
+                {project.icon}
+        <p className=' mt-1'>
             Project Name: {project.projectname}</p>
+            
+            </div>
          <div className='relative h-72 w-72 md:w-72 md:72 '>
             <Image src={project.image} alt='my projects' fill   />  
             </div>
