@@ -7,21 +7,13 @@ export const Hero = ()=>{
         <div>
 
             
-           <div className="  text-white py-8 flex flex-col 
+           <div className="   py-8 flex flex-col 
            justify-center items-center">
 
-           <div className="py-4 text:1xl  md:text-2xl font-extrabold ">
+           <div className="py-4 text:1xl text-blue-800 md:text-2xl font-extrabold ">
                 <p>WELCOME TO MY PORTFOLIO PAGE</p>
             </div>
 
-
-           <div className="text-center
-           leading-8 py-8 mt-16 flex flex-col md:justify-end md:items-end">
-           <p className="  text-lg font-bold
-           md:text-xl">
-            See  projects below
-            </p>
-           </div>
               
            </div>
 

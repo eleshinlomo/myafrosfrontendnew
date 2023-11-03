@@ -7,7 +7,7 @@ export const NewNavBar = ()=>{
         <div>
             
 
-            <div className='relative flex justify-between pt-5'>
+            <div className='relative flex justify-between pt-5 px-4'>
                 
                 <div className='relative w-24 h-12 '>
                     <Image src='/logo.png' alt='logo' fill />

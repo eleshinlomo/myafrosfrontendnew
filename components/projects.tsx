@@ -12,7 +12,9 @@ export const ProjectPage = ()=>{
             frontend: "Next js/Typscript",
             backend: "Python/Django",
             image: '/projects/fixupenew.png',
-            status: 'on-going',
+            status: 'On-going',
+            database: 'postGreSQL/Pinecone',
+            cloud: 'Vercel',
             route: 'https://www.fixupe.com'
         },
         {
@@ -22,7 +24,9 @@ export const ProjectPage = ()=>{
             frontend: "Wordpress",
             backend: "Not Applicable",
             image: '/projects/techoynew.png',
-            status: 'completed',
+            status: 'Completed',
+            database: 'Not Applicable',
+            cloud: 'AWS',
             route: 'https://www.techcoy.com/'
         },
         {
@@ -32,7 +36,9 @@ export const ProjectPage = ()=>{
             frontend: "Next js/Typscript",
             backend: "Python/Django",
             image: '/projects/dateme.png',
-            status: 'on-going',
+            database: 'postGreSQL/Pinecone',
+            cloud: 'Vercel',
+            status: 'On-going',
             route: 'https://dateme.vercel.app'
         },
        
@@ -41,7 +47,7 @@ export const ProjectPage = ()=>{
         <div>
 
             <div className='text-center'>
-                <p className='leading-8 font-extrabold text-black py-8'>PROJECTS</p>
+                <p className='leading-8 text-3xl font-extrabold text-black py-8'>PROJECTS</p>
             </div>
 
 <div className='flex flex-col md:flex-row lg:flex-row
@@ -50,15 +56,18 @@ export const ProjectPage = ()=>{
             Projects.map((project, index)=>
 
             <div key={index} className='flex flex-col gap-2'>
-        <p className='text-l text-white font-bold bg-black'>Project: {project.position}</p>
+        <p className='text-l text-center text-white pl-2 font-extrabold w-72 bg-blue-800 '>
+            Project Name: {project.projectname}</p>
          <div className='relative h-72 w-72 md:w-72 md:72 '>
             <Image src={project.image} alt='my projects' fill   />  
             </div>
             <div className='text-center'>
-            <p className='text-l '>Project Name: {project.projectname}</p>
+            
             <p className='text-l '>Project Usecase: {project.usecase}</p> 
             <p className='text-l '>Project Frontend: {project.frontend}</p>
             <p className='text-l '>Project Backend: {project.backend}</p>  
+            <p className='text-l '>Project Database: {project.database}</p>
+            <p className='text-l '>Project Cloud: {project.cloud}</p>    
             <p className='text-l '>Project Status: {project.status}</p>
             <Button className='bg-blue-800 mt-2' asChild>
                 <Link href={project.route}>View Project Website</Link>
