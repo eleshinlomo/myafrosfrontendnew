@@ -32,7 +32,7 @@ export const Footer = ()=>{
     return (
         <div>
 
-<div className=' text-white bg-black px-6 py-8  h-auto w-full'>
+<div className=' text-white  bg-black px-6 py-8  h-auto w-full'>
   <p className='text-center text-2xl mb-2'>Quick Links</p>
   
 
