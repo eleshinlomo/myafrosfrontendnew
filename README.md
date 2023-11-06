@@ -1,1 +1,1 @@
-A simple portfolio website to showcase only my personal private projects.
+A simple portfolio website to showcase SOME OF MY non-NDA projects.

@@ -2,8 +2,12 @@
 import Image from 'next/image'
 import { Button } from './ui/button'
 import { HomeMobileMenu } from './homemobilemenu'
+import { getDateToday } from './date'
 
 export const NewNavBar = ()=>{
+
+    const date = getDateToday()
+
     return (
         <div>
             
@@ -14,12 +18,18 @@ export const NewNavBar = ()=>{
                     <Image src='/logo.png' alt='logo' fill />
                 </div> */}
 
+                <div className='mt-2'>
+                 <p>
+                   Date: {date}
+                 </p>
+                </div>
+
                 <div>
                  <HomeMobileMenu />
                 </div>
                 
                 <div className='hidden md:flex md:pt-3'>
-                <Button className='md:bg-blue-500 bg-black '>Get Started</Button>
+                <Button className=' bg-black '>Get Started</Button>
                 </div>
             </div>
 

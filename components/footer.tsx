@@ -1,22 +1,20 @@
 import Link from 'next/link'
 import Image from 'next/image'
-// import {
-//     Menubar,
-//     MenubarContent,
-//     MenubarItem,
-//     MenubarMenu,
-//     MenubarSeparator,
-//     MenubarShortcut,
-//     MenubarTrigger,
-//   } from "@/components/ui/menubar"
 import { Button } from './ui/button'
 import { GithubIcon } from 'lucide-react'
+
+
+
+
   
 const footerItems: any = [
     
       {
+        
         logo:  '/images/logo.png',
-        copyright: `${'Copyright © '} ${new Date().getFullYear()} My Afros`,
+        myafrosurl: 'https://myafros.com',
+        copyright: `
+        ${'Copyright © '} ${new Date().getFullYear()}`,
         contact: 'Contact me',
         about: 'About me',
         projects: 'See more projects',
@@ -36,6 +34,7 @@ export const Footer = ()=>{
 
 <div className=' text-white bg-black px-6 py-8  h-auto w-full'>
   <p className='text-center text-2xl mb-2'>Quick Links</p>
+  
 
 { footerItems ?
 <div>
@@ -46,29 +45,40 @@ export const Footer = ()=>{
 
     {/* First Column */}
     <div className=''>
-    {/* <div className='relative h-8 w-12 my-4'>
+    <div className='relative h-24 w-full my-2'>
     <Image src={footer.logo} alt='logo' fill />
-    </div> */}
-    <p>{footer.others}</p>
+    </div>
     <Button className='my-4' asChild>
     <Link href={footer.github}>View Code on Github</Link>
     </Button>
-    
+    <div className='flex'>
+
+    <div className='relative h-24 w-24'>
+      <Image src="/images/visa_png.png" alt="logo" fill />
+      </div>
+      <div className='relative h-24 w-24'>
+      <Image src="/images/mastcard_logo.jpg" alt="logo" fill />
+      </div>
+
+      </div>
     </div>
     
     {/* Second Column */}
-    <div className='text-blue-800 flex flex-col'>
-    <p>{footer.contact}</p>
-    <p>{footer.about}</p>
+    <div className='text-blue-800 flex flex-col h-24'>
     <Link href={footer.privacy}>Privacy</Link>
     <Link href={footer.terms}>Terms</Link>
+    <p>{footer.contact}</p>
+    <p>{footer.about}</p>
     </div>
 
 
     {/* Third Column */}
-    <div>
+    <div className='h-24'>
       <p>{footer.info}</p>
+      <div>
       <p>{footer.copyright}</p>
+      <a href={footer.myafrosurl}>My Afros</a>
+      </div>
       
     </div>
 
