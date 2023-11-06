@@ -45,7 +45,7 @@ export const Footer = ()=>{
 
     {/* First Column */}
     <div className=''>
-    <div className='relative h-24 w-full my-2'>
+    <div className='relative h-12 w-full my-2'>
     <Image src={footer.logo} alt='logo' fill />
     </div>
     <Button className='my-4' asChild>
@@ -65,19 +65,26 @@ export const Footer = ()=>{
     
     {/* Second Column */}
     <div className='text-blue-800 flex flex-col h-24'>
-    <Link href={footer.privacy}>Privacy</Link>
-    <Link href={footer.terms}>Terms</Link>
+      <p className='text-white'>Information</p>
     <p>{footer.contact}</p>
     <p>{footer.about}</p>
     </div>
 
 
     {/* Third Column */}
+    <div className='text-blue-800 flex flex-col h-24'>
+    <p className='text-white'>Terms</p>
+    <Link href={footer.privacy}>Privacy</Link>
+    <Link href={footer.terms}>Terms</Link>
+    </div>
+
+
+    {/* Fourth Column */}
     <div className='h-24'>
       <p>{footer.info}</p>
       <div>
       <p>{footer.copyright}</p>
-      <a href={footer.myafrosurl}>My Afros</a>
+      <a href={footer.myafrosurl}  className='text-blue-800'>My Afros</a>
       </div>
       
     </div>
