@@ -12,89 +12,72 @@ import Image from 'next/image'
 import { Button } from './ui/button'
 import { GithubIcon } from 'lucide-react'
   
+const footerItems: any = [
+    
+      {
+        logo:  '/images/logo.png',
+        copyright: `${'Copyright © '} ${new Date().getFullYear()} My Afros`,
+        contact: 'Contact me',
+        about: 'About me',
+        projects: 'See more projects',
+        privacy: '/privacy',
+        terms: '/terms',
+        info: 'This portfolio project is owned and managed by Oluwaseun Olatunji',
+        github: 'https://github.com/eleshinlomo/myafrosfrontendnew',
+        others: 'Projects'
+    },
 
+]
 
 
 export const Footer = ()=>{
     return (
         <div>
 
-<div className=' text-white bg-black px-4 py-4  h-auto w-full'>
+<div className=' text-white bg-black px-6 py-8  h-auto w-full'>
+  <p className='text-center text-2xl mb-2'>Quick Links</p>
 
-<div className='flex flex-col md:flex-row lg:flex-row  justify-between
-px-2 items-center
- '>
+{ footerItems ?
+<div>
+  {footerItems.map((footer: any, index: any)=>
 
-<div className=''>
-<div className='relative w-24 h-12'>
-        <Link href='/'>
-        <Image src="/images/logo.png" alt="logo"  fill />
-        </Link>
-      </div>
+   <div key={index} className='flex flex-col md:flex-row text-center
+    md:justify-between items-center'>
 
-      <div>
-       <p className=' py-3'>
-       You can reach out using any of the contacts below. Thank you for 
-       checking this page.</p>
-       
-      </div>
-
-
-      </div>
- 
- {/* 2nd Column */}
-      <div className='flex flex-col'>
-        <p className='text-2xl'>Information</p>
-        <Button variant='link' className='text-blue-500' >
-            Contact me
-        </Button>
-
-        <Button variant='link' className='text-blue-500'>
-            See more Projects
-        </Button>
-
-        <Button variant='link' className='text-blue-500'>
-            About me
-        </Button>
-      </div>
-
-{/* 3rd Column */}
-      <div className='flex flex-col'>
-      <p className='text-2xl'>Terms & Service</p>
-        <Button variant='link'  className='text-blue-500' asChild>
-           <Link href='/privacy'>Privacy</Link>
-        </Button>
-
-        <Button variant='link' className='text-blue-500' asChild>
-        <Link href='/terms'>Terms</Link>
-        </Button>
-
-        <Button variant='link' className='text-blue-500'>
-            Cookies
-        </Button>
-      </div>
-
+    {/* First Column */}
+    <div className=''>
+    {/* <div className='relative h-8 w-12 my-4'>
+    <Image src={footer.logo} alt='logo' fill />
+    </div> */}
+    <p>{footer.others}</p>
+    <Button className='my-4' asChild>
+    <Link href={footer.github}>View Code on Github</Link>
+    </Button>
     
-      </div>
+    </div>
+    
+    {/* Second Column */}
+    <div className='text-blue-800 flex flex-col'>
+    <p>{footer.contact}</p>
+    <p>{footer.about}</p>
+    <Link href={footer.privacy}>Privacy</Link>
+    <Link href={footer.terms}>Terms</Link>
+    </div>
 
-      <div className='pl-2  mb-3'>
-        <p>This portfolio project is owned and managed by Oluwaseun Olatunji.<br />
-         </p>
-         <p className='py-2'>Copyright 2023. All Rights Reserved.</p>
-      </div>
 
-      <div className='flex py-3'>
+    {/* Third Column */}
+    <div>
+      <p>{footer.info}</p>
+      <p>{footer.copyright}</p>
+      
+    </div>
 
-        <div className='flex gap-5'>
-            <Button className='bg-blue-800'  asChild>
-                <a href='https://github.com/eleshinlomo/myafrosfrontendnew/tree/main'> View code on Github</a>
-            </Button>
-            <GithubIcon className='mt-2' />
-        </div>
-     
-      </div>
+    </div>
+  )}
+  </div>:null
+}
 
-      </div>
+</div>
         </div>
     )
 }

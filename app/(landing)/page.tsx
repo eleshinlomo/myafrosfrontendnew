@@ -14,7 +14,7 @@ const HomePage = () => {
 
 
 
-      <div className='py-4'>
+      <div className='pt-4'>
 
 <NewNavBar />
         
