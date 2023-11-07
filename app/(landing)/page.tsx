@@ -19,7 +19,13 @@ const HomePage = () => {
 
 <NewNavBar />
         
-       <div className=' '>
+       <div className='' style={{
+        backgroundImage: `url('/bg/load.gif')`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        mixBlendMode: 'hard-light',
+        backgroundSize: '700px'
+        }}>
       
       <Hero />
       
