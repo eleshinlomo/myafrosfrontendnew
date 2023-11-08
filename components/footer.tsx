@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from './ui/button'
-import { GithubIcon } from 'lucide-react'
+import { GithubIcon, LinkedinIcon } from 'lucide-react'
 
 
 
@@ -32,7 +32,7 @@ export const Footer = ()=>{
     return (
         <div>
 
-<div className=' text-white  bg-black px-6 py-8  h-auto w-full'>
+<div className=' text-white  bg-black px-6 py-12   w-full'>
   <p className='text-center text-2xl mb-2'>Quick Links</p>
   
 
@@ -40,7 +40,7 @@ export const Footer = ()=>{
 <div>
   {footerItems.map((footer: any, index: any)=>
 
-   <div key={index} className='flex flex-col md:flex-row text-center
+   <div key={index} className='flex flex-col gap-8 md:flex-row text-center
     md:justify-between items-center'>
 
     {/* First Column */}
@@ -68,11 +68,25 @@ export const Footer = ()=>{
       <p className='text-white'>Information</p>
     <p>{footer.contact}</p>
     <p>{footer.about}</p>
+    
+    <div className='flex gap-3 p-4'>
+    <a href='https://www.linkedin.com/in/olatunjioluwaseun/'>
+    <Button size='icon'>
+      <LinkedinIcon />
+      </Button>
+      </a>
+
+      <a href='https://github.com/eleshinlomo'>
+    <Button size='icon'>
+      <GithubIcon />
+      </Button>
+      </a>
+      </div>
     </div>
 
 
     {/* Third Column */}
-    <div className='text-blue-800 flex flex-col h-24'>
+    <div className='text-blue-800 flex flex-col mt-5 md:mt-0'>
     <p className='text-white'>Terms</p>
     <Link href={footer.privacy}>Privacy</Link>
     <Link href={footer.terms}>Terms</Link>
