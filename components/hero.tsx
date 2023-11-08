@@ -11,7 +11,7 @@ export const Hero = ()=>{
            justify-center items-center">
 
            <div className="py-4 text-sm flex gap-1 md:gap-2 text-black md:text-2xl font-extrabold ">
-                <p>WELCOME TO MY PORTFOLIO PAGE </p>
+                <p>PORTFOLIO PROJECT </p>
                 <BriefcaseIcon className="md:mt-1" />
             </div>
 
