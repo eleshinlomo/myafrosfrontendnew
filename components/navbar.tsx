@@ -1,7 +1,7 @@
 
 import Image from 'next/image'
 import { Button } from './ui/button'
-import { HomeMobileMenu } from './homemobilemenu'
+import { MobileMenu } from './mobilemenu'
 import { getDateToday } from './date'
 
 export const NewNavBar = ()=>{
@@ -25,7 +25,7 @@ export const NewNavBar = ()=>{
                 </div>
 
                 <div>
-                 <HomeMobileMenu />
+                 <MobileMenu />
                 </div>
                 
                 <div className='hidden md:flex md:pt-3'>

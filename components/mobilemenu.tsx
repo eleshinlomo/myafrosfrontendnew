@@ -1,9 +1,9 @@
 import { MenuIcon} from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet"
 import { Button } from "./ui/button"
-import { HomeMobileSidebar } from "./homemobilesidebar"
+import { MobileSidebar } from "./mobilesidebar"
 
-export const HomeMobileMenu = ()=>{
+export const MobileMenu = ()=>{
     return (
         <div>
             <Sheet>
@@ -16,7 +16,7 @@ export const HomeMobileMenu = ()=>{
                     <p className="text-2xl">Quick Links</p>
 
                     <p className="lg py-6">Projects</p>
-                    <HomeMobileSidebar />
+                    <MobileSidebar />
                 </SheetContent>
             </Sheet>
         </div>

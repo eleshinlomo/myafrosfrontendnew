@@ -79,8 +79,6 @@ const ProjectPage = ()=>{
             setShowProjectDetails(false)
         }
 
-        
-
 
     return (
         <div>
@@ -122,14 +120,16 @@ const ProjectPage = ()=>{
                     
                 {/* {showProjectDetails ? */}
                 <Sheet>
-                <SheetTrigger>
+                <SheetTrigger asChild>
                    <Button> View Details</Button>
                 </SheetTrigger>
+                
                 <SheetContent side='bottom' className='flex flex-col 
                 justify-center items-center bg-black text-white text-center font-md'>
-            <div className='relative w-32 h-24'>
-                <Image src='/images/logo.png' alt='logo' fill />
+                     <div className='relative w-32 h-24 '>
+                <Image src='/images/logo.png' alt='logo' className='' fill />
             </div>
+            <div>
             <p className='text-xl font-extrabold  '>Project Name: {project.projectname}</p>
             <p className='text-l '>Project Usecase: {project.usecase}</p> 
             <p className='text-l '>Project Frontend: {project.frontend}</p>
@@ -142,6 +142,7 @@ const ProjectPage = ()=>{
                 View Project Website
                     </Link>
             </Button>
+            </div>
             </SheetContent>
             </Sheet>
             {/* </div>:null */}

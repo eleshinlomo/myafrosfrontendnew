@@ -4,7 +4,7 @@ import { Button } from "./ui/button"
 import { ScanFaceIcon } from "lucide-react"
 
 
-export const HomeMobileSidebar = ()=>{
+export const MobileSidebar = ()=>{
 
     return (
         <div>
