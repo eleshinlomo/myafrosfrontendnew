@@ -24,7 +24,8 @@ export const Projects = [
         projectname: "Fixupe",
         icon: <BotIcon />,
         usecase: "AI tools",
-        frontend: "Next js/Typscript",
+        api: 'OpenAI, Langchain, REST',
+        frontend: "Next js/Typescript",
         backend: "Python/Django",
         image: '/projects/fixupenew.png',
         status: 'On-going',
@@ -50,7 +51,8 @@ export const Projects = [
         projectname: "Date Me",
         icon: <BotIcon />,
         usecase: "Dating Platform",
-        frontend: "Next js/Typscript",
+        api: 'OpenAI, Langchain, REST',
+        frontend: "Next js/Typescript",
         backend: "Python/Django",
         image: '/projects/dateme.png',
         database: 'postGreSQL/Pinecone',
@@ -135,7 +137,8 @@ const ProjectPage = ()=>{
             <p className='text-l '>Project Frontend: {project.frontend}</p>
             <p className='text-l '>Project Backend: {project.backend}</p>  
             <p className='text-l '>Project Database: {project.database}</p>
-            <p className='text-l '>Project Cloud: {project.cloud}</p>    
+            <p className='text-l '>Project Cloud: {project.cloud}</p> 
+            <p className='text-l '>Project APIs: {project.api}</p>     
             <p className='text-l '>Project Status: {project.status}</p>
             <Button className=' mt-2 ' asChild>
                 <Link href={project.route} className='animate-pulse'>

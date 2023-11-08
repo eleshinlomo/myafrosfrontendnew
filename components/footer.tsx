@@ -20,7 +20,7 @@ const footerItems: any = [
         projects: 'See more projects',
         privacy: '/privacy',
         terms: '/terms',
-        info: 'This portfolio project is owned and managed by Oluwaseun Olatunji',
+        info: 'This is a personal project portfolio',
         github: 'https://github.com/eleshinlomo/myafrosfrontendnew',
         others: 'Projects'
     },
