@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from './ui/button'
-import { GithubIcon, LinkedinIcon } from 'lucide-react'
+import { GithubIcon, GitlabIcon, LinkedinIcon } from 'lucide-react'
 
 
 
@@ -69,20 +69,29 @@ export const Footer = ()=>{
     <p>{footer.contact}</p>
     <p>{footer.about}</p>
     
-    <div className='flex gap-5 py-4'>
+    <div className='flex justify-center gap-5 py-4'>
     <a href='https://www.linkedin.com/in/olatunjioluwaseun/'>
-    <Button size='icon' className='w-4 h-4' asChild>
+    <Button size='icon' className='w-6 h-6' asChild>
       <LinkedinIcon />
       </Button>
       </a>
 
       <a href='https://github.com/eleshinlomo'>
-    <Button size='icon' className='w-4 h-4' asChild>
+    <Button size='icon' className='w-6 h-6' asChild>
       <GithubIcon />
       </Button>
       </a>
+
+      <a href='https://gitlab.com/eleshinlomo'>
+    <Button size='icon' className='w-6 h-6' asChild>
+      <GitlabIcon />
+      </Button>
+      </a>
       </div>
+
     </div>
+
+    
 
 
     {/* Third Column */}
