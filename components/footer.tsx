@@ -71,13 +71,13 @@ export const Footer = ()=>{
     
     <div className='flex gap-5 py-4'>
     <a href='https://www.linkedin.com/in/olatunjioluwaseun/'>
-    <Button size='icon' className='w-8 h-8' asChild>
+    <Button size='icon' className='w-4 h-4' asChild>
       <LinkedinIcon />
       </Button>
       </a>
 
       <a href='https://github.com/eleshinlomo'>
-    <Button size='icon' className='w-8 h-8' asChild>
+    <Button size='icon' className='w-4 h-4' asChild>
       <GithubIcon />
       </Button>
       </a>
