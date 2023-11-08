@@ -37,6 +37,7 @@ export const Projects = [
         id:2,
         projectname: "Techcoy",
         icon: <BotIcon />,
+        api: 'REST',
         usecase: "Blog",
         frontend: "Wordpress",
         backend: "Not Applicable",
