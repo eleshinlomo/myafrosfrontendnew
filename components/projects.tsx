@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { Button } from './ui/button'
 import Link from 'next/link'
-import { BotIcon } from 'lucide-react'
+import { BotIcon} from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import {
     Card,
@@ -13,6 +13,8 @@ import {
     CardTitle,
   } from "@/components/ui/card"
 import { useState } from 'react'
+import { cn } from '@/lib/utils'
+import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
   
 
 
@@ -83,7 +85,7 @@ const ProjectPage = ()=>{
     return (
         <div>
 
-            <div className='text-center'>
+            <div className='text-center text-black'>
                 <p className='leading-8 text-3xl font-extrabold text-black py-8'>PROJECTS</p>
             </div>
 
@@ -95,8 +97,8 @@ const ProjectPage = ()=>{
             <div key={index}>
 
             <div>
-                <Card className='flex flex-col bg-black text-white rounded-2xl
-                 hover:shadow-md hover:bg-white hover:text-black justify-center text-center
+                <Card className='flex flex-col shadow-2xl rounded-2xl
+                 hover:shadow-3xl border-blue-600  justify-center text-center
                  transition cursor-pointer delay-75 duration-2000 w-72  md:w-96'
                  >
                 <CardHeader className='flex text-md py-4 justify-center
@@ -118,11 +120,17 @@ const ProjectPage = ()=>{
             
             <CardFooter className='flex flex-col w-full justify-center items-center'>
                     
-           <Button onClick={showProjectDetails? closeDetails : openDetails 
-            }>{showProjectDetails ? 'Close': 'View Details'}
-            </Button>
-                {showProjectDetails ?
-                <div>
+                {/* {showProjectDetails ? */}
+                <Sheet>
+                <SheetTrigger>
+                   <Button> View Details</Button>
+                </SheetTrigger>
+                <SheetContent side='bottom' className='flex flex-col 
+                justify-center items-center bg-black text-white text-center font-md'>
+            <div className='relative w-32 h-24'>
+                <Image src='/images/logo.png' alt='logo' fill />
+            </div>
+            <p className='text-xl font-extrabold  '>Project Name: {project.projectname}</p>
             <p className='text-l '>Project Usecase: {project.usecase}</p> 
             <p className='text-l '>Project Frontend: {project.frontend}</p>
             <p className='text-l '>Project Backend: {project.backend}</p>  
@@ -130,12 +138,14 @@ const ProjectPage = ()=>{
             <p className='text-l '>Project Cloud: {project.cloud}</p>    
             <p className='text-l '>Project Status: {project.status}</p>
             <Button className=' mt-2 ' asChild>
-                <Link href={project.route}>
+                <Link href={project.route} className='animate-pulse'>
                 View Project Website
                     </Link>
             </Button>
-            </div>:null
-            }
+            </SheetContent>
+            </Sheet>
+            {/* </div>:null */}
+            
             
 
     
