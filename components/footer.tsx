@@ -20,7 +20,7 @@ const footerItems: any = [
         projects: 'See more projects',
         privacy: '/privacy',
         terms: '/terms',
-        info: 'This is a personal project portfolio',
+        info: 'This is a portfolio project',
         github: 'https://github.com/eleshinlomo/myafrosfrontendnew',
         others: 'Projects'
     },
@@ -45,9 +45,9 @@ export const Footer = ()=>{
 
     {/* First Column */}
     <div className=''>
-    <div className='relative h-12 w-full my-2'>
+    {/* <div className='relative h-8 w-8 my-2'>
     <Image src={footer.logo} alt='logo' fill />
-    </div>
+    </div> */}
     <Button className='my-4' asChild>
     <Link href={footer.github}>View Code on Github</Link>
     </Button>
@@ -69,15 +69,15 @@ export const Footer = ()=>{
     <p>{footer.contact}</p>
     <p>{footer.about}</p>
     
-    <div className='flex gap-3 p-4'>
+    <div className='flex gap-5 py-4'>
     <a href='https://www.linkedin.com/in/olatunjioluwaseun/'>
-    <Button size='icon'>
+    <Button size='icon' className='w-8 h-8' asChild>
       <LinkedinIcon />
       </Button>
       </a>
 
       <a href='https://github.com/eleshinlomo'>
-    <Button size='icon'>
+    <Button size='icon' className='w-8 h-8' asChild>
       <GithubIcon />
       </Button>
       </a>
