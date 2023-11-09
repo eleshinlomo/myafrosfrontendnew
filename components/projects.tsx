@@ -21,7 +21,7 @@ import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 export const Projects = [
     {   
         id:1,
-        projectname: "Fixupe",
+        projectname: "Fixupe(AI)",
         icon: <BotIcon />,
         usecase: "AI tools",
         api: 'OpenAI, Langchain, REST',
@@ -49,7 +49,7 @@ export const Projects = [
     },
     {   
         id:3,
-        projectname: "Date Me",
+        projectname: "Date Me(AI)",
         icon: <BotIcon />,
         usecase: "Dating Platform",
         api: 'OpenAI, Langchain, REST',

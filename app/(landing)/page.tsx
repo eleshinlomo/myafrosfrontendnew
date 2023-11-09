@@ -31,7 +31,6 @@ const HomePage = () => {
         >
       
       <Hero />
-      
       <CtaBlockPage />
       < ProjectPage />
       <Cta2Block />
