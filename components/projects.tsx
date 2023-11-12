@@ -103,11 +103,12 @@ const ProjectPage = ()=>{
         <div>
 
             <div className='text-center text-black'>
-                <p className='leading-8 text-3xl font-extrabold text-black py-8'>PROJECTS</p>
+                <p className='leading-8 text-3xl font-extrabold
+                 text-black py-8'>PROJECTS</p>
             </div>
 
 <div className='flex flex-col md:flex-row lg:flex-row
-         py-6 px-5 gap-10 justify-center items-center '>
+         py-6 px-2 gap-10 justify-center items-center w-full '>
           {
             Projects.map((project, index)=>
 
@@ -116,11 +117,11 @@ const ProjectPage = ()=>{
             <div>
                 <Card className='flex flex-col shadow-2xl rounded-2xl
                  hover:shadow-3xl border-blue-600  justify-center text-center
-                 transition cursor-pointer delay-75 duration-2000 w-full  '
+                 transition cursor-pointer delay-75 duration-2000 '
                  >
                 <CardHeader className='flex text-md py-4 justify-center
                  items-center gap-2
-         font-extrabold w-full'>
+         font-extrabold'>
         
                 {project.icon}
         <p className=' mt-1 '>
@@ -128,8 +129,8 @@ const ProjectPage = ()=>{
             
                     </CardHeader>
 
-                    <CardContent className='w-full'>
-                    <div className='relative h-52 w-full md:w-full  '>
+                    <CardContent className=''>
+                    <div className='relative h-72 w-72 md:w-72  '>
                     <Image src={project.image} alt='my projects' fill   />  
                     </div>
                     </CardContent>
@@ -140,10 +141,10 @@ const ProjectPage = ()=>{
                 {/* {showProjectDetails ? */}
                 <Sheet>
                 <SheetTrigger asChild>
-                   <Button> View Details</Button>
+                   <Button className='rounded-full '> View Details</Button>
                 </SheetTrigger>
                 
-                <SheetContent side='bottom' className='flex flex-col 
+                <SheetContent side='bottom' className='flex flex-col w-full
                 justify-center items-center bg-black text-white text-center font-md'>
                      <div className='relative w-32 h-24 '>
                 <Image src='/images/logo.png' alt='logo' className='' fill />
@@ -157,7 +158,7 @@ const ProjectPage = ()=>{
             <p className='text-l '>Project Cloud: {project.cloud}</p> 
             <p className='text-l '>Project APIs: {project.api}</p>     
             <p className='text-l '>Project Status: {project.status}</p>
-            <Button className=' mt-2 ' asChild>
+            <Button className=' mt-2 bg-blue-900 rounded-full  ' asChild>
                 <Link href={project.route} className='animate-pulse'>
                 View Project Website
                     </Link>

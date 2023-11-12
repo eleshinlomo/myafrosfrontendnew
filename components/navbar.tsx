@@ -12,24 +12,24 @@ export const NewNavBar = ()=>{
         <div>
             
 
-            <div className='relative flex justify-between pt-5 px-4 text-black'>
+            <div className='relative shadow-3xl flex justify-between pt-5 px-4 text-white'>
                 
                 {/* <div className='relative w-24 h-12 rounded-full bg-black m-2 '>
                     <Image src='/logo.png' alt='logo' fill />
                 </div> */}
 
-                <div className='mt-2'>
-                 <p>
+                <div className='mt-2 shadow-2xl bg-white rounded-full py-2 px-2'>
+                 <p className='text-black'>
                    Date: {date}
                  </p>
                 </div>
 
-                <div>
+                <div className=''>
                  <MobileMenu />
                 </div>
                 
                 <div className='hidden md:flex md:pt-3'>
-                <Button className=' bg-black '>Get Started</Button>
+                <Button className=' bg-black rounded-full '>Get Started</Button>
                 </div>
             </div>
 

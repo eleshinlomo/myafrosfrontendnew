@@ -20,11 +20,16 @@ export default function RootLayout({
 }) {
   return (
     
-    <html lang="en">
+    <div>
       
-      <body className={inter.className}>{children}</body>
+      <main className='bg-gradient-to-r from-blue-500 via-transparent to-blue-500 ">
+'>
+        {children}
+        </main>
+    
+    </div>
      
-    </html>
+    
     
   )
 }
