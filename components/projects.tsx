@@ -27,12 +27,28 @@ export const Projects = [
         api: 'OpenAI, Langchain, REST',
         frontend: "Next js/Typescript",
         backend: "Python/Django",
-        image: '/projects/fixupenew.png',
+        image: '/images/girl10.png',
         status: 'On-going',
         database: 'postGreSQL/Pinecone',
         cloud: 'Vercel',
         route: 'https://www.fixupe.com'
     },
+
+    {    
+        id:2,
+        projectname: "Solarit(AI)",
+        icon: <BotIcon />,
+        api: 'REST',
+        usecase: "Knowledgebase",
+        frontend: "Next Js",
+        backend: "Python/Django",
+        image: '/projects/solar_pic2.jpg',
+        status: 'On-going',
+        database: 'PostgreSQL',
+        cloud: 'AWS',
+        route: 'https://solarit.vercel.app/'
+    },
+
     {    
         id:2,
         projectname: "Techcoy",
@@ -95,12 +111,12 @@ const ProjectPage = ()=>{
           {
             Projects.map((project, index)=>
 
-            <div key={index}>
+            <div key={index} className=''>
 
             <div>
                 <Card className='flex flex-col shadow-2xl rounded-2xl
                  hover:shadow-3xl border-blue-600  justify-center text-center
-                 transition cursor-pointer delay-75 duration-2000 w-72  md:w-96'
+                 transition cursor-pointer delay-75 duration-2000 w-full  '
                  >
                 <CardHeader className='flex text-md py-4 justify-center
                  items-center gap-2

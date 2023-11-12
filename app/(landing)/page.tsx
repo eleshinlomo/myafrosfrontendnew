@@ -8,6 +8,7 @@ import { Cta2Block } from '@/components/cta2block'
 import ProjectPage from '@/components/projects'
 import { Footer } from '@/components/footer'
 import { cn } from '@/lib/utils'
+import { Col3Cta } from '@/components/col3scta'
 
 const HomePage = () => {
   return (
@@ -31,9 +32,8 @@ const HomePage = () => {
         >
       
       <Hero />
-      <CtaBlockPage />
       < ProjectPage />
-      <Cta2Block />
+      <Col3Cta />
       
       </div>
       <Footer />
