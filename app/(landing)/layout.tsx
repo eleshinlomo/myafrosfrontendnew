@@ -22,7 +22,7 @@ export default function RootLayout({
     
     <div>
       
-      <main className='bg-gradient-to-r from-blue-500 via-transparent to-blue-500 ">
+      <main className=' ">
 '>
         {children}
         </main>

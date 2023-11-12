@@ -29,7 +29,7 @@ export const NewNavBar = ()=>{
                 </div>
                 
                 <div className='hidden md:flex md:pt-3'>
-                <Button className=' bg-black rounded-full '>Get Started</Button>
+                <Button className=' bg-blue-900 rounded-full '>Get Started</Button>
                 </div>
             </div>
 

@@ -15,7 +15,7 @@ export const Col3Cta = ()=>{
                 <p className="text-2xl font-extrabold py-4 "> 
                 Languages
                 </p>
-                <p className=" py-4 px-4">Javascript, Python,
+                <p className=" py-4 px-4">Javascript, Python, Typescript,
                  HTML, CSS!</p>
                 
                 </div>

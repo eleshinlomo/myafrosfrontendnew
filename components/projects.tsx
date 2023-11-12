@@ -141,7 +141,7 @@ const ProjectPage = ()=>{
                 {/* {showProjectDetails ? */}
                 <Sheet>
                 <SheetTrigger asChild>
-                   <Button className='rounded-full '> View Details</Button>
+                   <Button className='rounded-full bg-blue-900 '> View Details</Button>
                 </SheetTrigger>
                 
                 <SheetContent side='bottom' className='flex flex-col w-full
