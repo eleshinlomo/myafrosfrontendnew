@@ -8,6 +8,7 @@ import ProjectPage from '@/components/projects'
 import { Footer } from '@/components/footer'
 import { cn } from '@/lib/utils'
 import { Col3Cta } from '@/components/col3scta'
+import  Typewriter  from '@/components/typewriter'
 
 const HomePage = () => {
   return (
@@ -31,7 +32,7 @@ const HomePage = () => {
       //   backgroundSize: '400px'
       //   }}
         >
-      
+      <Typewriter />
       <Hero />
       <Col3Cta />
       <ProjectPage />
