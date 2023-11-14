@@ -1,6 +1,6 @@
 "use client"
 import { NewNavBar } from '@/components/navbar'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { Hero } from '@/components/hero'
 import { CtaBlockPage } from '@/components/ctablock'
@@ -11,10 +11,21 @@ import { Col3Cta } from '@/components/col3scta'
 import  Typewriter  from '@/components/typewriter'
 
 const HomePage = () => {
+  const [customText, setCustomText] = useState<Array<string>>([])
+
+  useEffect(()=>{
+    setCustomText(
+      [
+        "Browse through projects",
+        "New features updated",
+        "Cutting edge technology"
+      ]
+    )
+  }, [])
+
   return (
+    
     <div>
-
-
 
       
       <div className='pt-4'>
@@ -32,7 +43,7 @@ const HomePage = () => {
       //   backgroundSize: '400px'
       //   }}
         >
-      <Typewriter />
+      <Typewriter customText={customText} />
       <Hero />
       <Col3Cta />
       <ProjectPage />

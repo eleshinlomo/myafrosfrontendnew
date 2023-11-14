@@ -6,7 +6,7 @@ export const Col3Cta = ()=>{
         <div>
             <div className="text-center flex justify-around items-center mx-5
             bg-white 
-            shadow-2xl text-black font-bold rounded-2xl md:rounded-full
+            shadow-2xl text-black font-bold rounded-2xl 
             flex-col md:flex-row lg:flex:row gap-5
              py-8 px-6 text-sm">
                

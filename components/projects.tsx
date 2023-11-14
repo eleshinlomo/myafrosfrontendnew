@@ -100,23 +100,23 @@ const ProjectPage = ()=>{
 
 
     return (
-        <div>
+        <div className='w-full h-full'>
 
-            <div className='text-center text-black'>
+            <div className='text-center text-white'>
                 <p className='leading-8 text-3xl font-extrabold
-                 text-black py-8'>PROJECTS</p>
+                  py-8'>PROJECTS</p>
             </div>
 
 <div className='flex flex-col md:flex-row lg:flex-row
-         py-6 px-2 gap-10 justify-center items-center w-full '>
+         py-6 px-2 gap-10 justify-center items-center w-full'>
           {
             Projects.map((project, index)=>
 
             <div key={index} className=''>
 
             <div>
-                <Card className='flex flex-col shadow-2xl rounded-2xl
-                 hover:shadow-3xl border-blue-600  justify-center text-center
+                <Card className='flex flex-col shadow-2xl  px-4 
+                 hover:shadow-3xl   justify-center items-center text-center w-auto
                  transition cursor-pointer delay-75 duration-2000 '
                  >
                 <CardHeader className='flex text-md py-4 justify-center
@@ -129,8 +129,8 @@ const ProjectPage = ()=>{
             
                     </CardHeader>
 
-                    <CardContent className=''>
-                    <div className='relative h-72 w-72 md:w-72  '>
+                    <CardContent className='px-2 w-72 h-72 md:w-72 '>
+                    <div className='relative h-72 w-full md:w-full  '>
                     <Image src={project.image} alt='my projects' fill   />  
                     </div>
                     </CardContent>
@@ -141,7 +141,7 @@ const ProjectPage = ()=>{
                 {/* {showProjectDetails ? */}
                 <Sheet>
                 <SheetTrigger asChild>
-                   <Button className='rounded-full bg-blue-900 '> View Details</Button>
+                   <Button variant='outline' className='rounded-full text-white bg-black '> View Details</Button>
                 </SheetTrigger>
                 
                 <SheetContent side='bottom' className='flex flex-col w-full
@@ -158,7 +158,7 @@ const ProjectPage = ()=>{
             <p className='text-l '>Project Cloud: {project.cloud}</p> 
             <p className='text-l '>Project APIs: {project.api}</p>     
             <p className='text-l '>Project Status: {project.status}</p>
-            <Button className=' mt-2 bg-blue-900 rounded-full  ' asChild>
+            <Button variant='outline' className='  mt-2 bg-black rounded-full  ' asChild>
                 <Link href={project.route} className='animate-pulse'>
                 View Project Website
                     </Link>
