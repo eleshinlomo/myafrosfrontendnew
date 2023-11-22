@@ -107,30 +107,28 @@ const ProjectPage = ()=>{
                   py-8'>PROJECTS</p>
             </div>
 
-<div className='flex flex-col md:flex-row lg:flex-row
-         py-6 px-2 gap-10 justify-center items-center w-full'>
+<div className=' grid grid-flow-row  md:grid-cols-4
+         py-8 px-6  w-full gap-3'>
           {
             Projects.map((project, index)=>
 
             <div key={index} className=''>
 
             <div>
-                <Card className='flex flex-col shadow-2xl  px-4 
-                 hover:shadow-3xl   justify-center items-center text-center w-auto
-                 transition cursor-pointer delay-75 duration-2000 '
+                <Card className='grid grid-flow-row  md:grid-col-4 rounded-2xl 
+                     text-center  w-full md:w-72 h-96 md:ml-10 
+                 '
                  >
-                <CardHeader className='flex text-md py-4 justify-center
-                 items-center gap-2
-         font-extrabold'>
-        
-                {project.icon}
-        <p className=' mt-1 '>
+                <CardHeader className=''>
+                <div className='flex justify-center items-center gap-0 flex-1 font-extrabold'>
+               
+        <p className=''>
             Project Name: {project.projectname}</p>
-            
+            </div>
                     </CardHeader>
 
-                    <CardContent className='px-2 w-72 h-72 md:w-72 '>
-                    <div className='relative h-72 w-full md:w-full  '>
+                    <CardContent className=' h-64 w-full   '>
+                    <div className='relative h-full w-afull '>
                     <Image src={project.image} alt='my projects' fill   />  
                     </div>
                     </CardContent>
@@ -141,7 +139,8 @@ const ProjectPage = ()=>{
                 {/* {showProjectDetails ? */}
                 <Sheet>
                 <SheetTrigger asChild>
-                   <Button variant='outline' className='rounded-full text-white bg-black '> View Details</Button>
+                   <Button variant='outline' className='rounded-full text-white bg-black'> 
+                   View Details</Button>
                 </SheetTrigger>
                 
                 <SheetContent side='bottom' className='flex flex-col w-full

@@ -4,11 +4,11 @@ import { Button } from "./ui/button"
 export const Col3Cta = ()=>{
     return (
         <div>
-            <div className="text-center flex justify-around items-center mx-5
+            <div className="text-center grid md:grid-cols-4 grid-flow-row  mx-5
             bg-white 
             shadow-2xl text-black font-bold rounded-2xl 
-            flex-col md:flex-row lg:flex:row gap-5
-             py-8 px-6 text-sm">
+             gap-2
+             py-4 px-6 text-sm">
                
                {/* Col One */}
                 <div>
