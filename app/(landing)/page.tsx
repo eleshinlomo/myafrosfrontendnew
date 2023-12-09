@@ -7,7 +7,7 @@ import { CtaBlockPage } from '@/components/ctablock'
 import ProjectPage from '@/components/projects'
 import { Footer } from '@/components/footer'
 import { cn } from '@/lib/utils'
-import { Col3Cta } from '@/components/col3scta'
+import { Col3Cta } from '@/components/skillsets'
 import  Typewriter  from '@/components/typewriter'
 
 const HomePage = () => {
@@ -28,7 +28,7 @@ const HomePage = () => {
     <div>
 
       
-      <div className='pt-4'>
+      <div className='pt-4 overflow-hidden flex flex-col justify-center  bg-gray-900'>
 
       <NewNavBar />
         

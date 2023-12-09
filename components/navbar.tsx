@@ -3,6 +3,10 @@ import Image from 'next/image'
 import { Button } from './ui/button'
 import { MobileMenu } from './mobilemenu'
 import { getDateToday } from './date'
+import Link from 'next/link'
+import { ArrowBigDown, ArrowBigRight } from 'lucide-react'
+import { ProjectsDropDown } from './dropdownmenus'
+import { Navbarlinks } from './navbarlinks'
 
 export const NewNavBar = ()=>{
 
@@ -12,7 +16,8 @@ export const NewNavBar = ()=>{
         <div>
             
 
-            <div className='relative shadow-3xl flex justify-between pt-5 px-4 text-white'>
+            <div className='relative shadow-3xl flex flex-1 justify-between
+            md:justify-around pt-5 px-4 '>
                 
                 <div className='hidden md:flex relative w-24 h-12 rounded-full bg-black m-2 '>
                     <Image src='/logo.png' alt='logo' fill />
@@ -28,9 +33,7 @@ export const NewNavBar = ()=>{
                  <MobileMenu />
                 </div>
                 
-                <div className='hidden md:flex md:pt-3'>
-                <Button variant='outline' className=' bg-black/40 rounded-full '>Get Started</Button>
-                </div>
+                <Navbarlinks />
             </div>
 
 

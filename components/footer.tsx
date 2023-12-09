@@ -15,8 +15,8 @@ const footerItems: any = [
         myafrosurl: 'https://myafros.com',
         copyright: `
         ${'Copyright © '} ${new Date().getFullYear()}`,
-        contact: 'Contact me',
-        about: 'About me',
+        contact: 'Contact',
+        about: 'About',
         projects: 'See more projects',
         privacy: '/privacy',
         terms: '/terms',

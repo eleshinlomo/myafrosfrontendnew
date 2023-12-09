@@ -12,7 +12,7 @@ export const MobileMenu = ()=>{
             <MenuIcon />
         </Button>
                 </SheetTrigger>
-                <SheetContent side='left' className="bg-black text-white">
+                <SheetContent side='left' className="bg-gray-900 text-white">
                     <p className="text-2xl">Quick Links</p>
 
                     <p className="lg py-6">Projects</p>

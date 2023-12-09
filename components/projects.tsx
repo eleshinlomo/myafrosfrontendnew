@@ -100,9 +100,9 @@ const ProjectPage = ()=>{
 
 
     return (
-        <div className='w-full h-full'>
+        <div className='w-full h-full bg-gray-900 text-white'>
 
-            <div className='text-center text-white'>
+            <div className='text-center'>
                 <p className='leading-8 text-3xl font-extrabold
                   py-8'>PROJECTS</p>
             </div>
@@ -115,40 +115,39 @@ const ProjectPage = ()=>{
             <div key={index} className=''>
 
             <div>
-                <Card className='grid grid-flow-row  md:grid-col-4 rounded-2xl 
-                     text-center  w-full md:w-72 h-96 md:ml-10 
+                <Card className='grid grid-flow-row  md:grid-flow-row
+                gap-3 rounded-2xl bg-gray-900
+                     text-center  w-full md:w-72 h-auto md:ml-10 
                  '
                  >
                 <CardHeader className=''>
-                <div className='flex justify-center items-center gap-0 flex-1 font-extrabold'>
+                <div className='flex justify-center items-center gap-0 
+                flex-1 font-extrabold'>
                
-        <p className=''>
+        <p className='text-white'>
             Project Name: {project.projectname}</p>
             </div>
                     </CardHeader>
 
-                    <CardContent className=' h-64 w-full   '>
-                    <div className='relative h-full w-afull '>
+                    <CardContent className=' w-full   '>
+                    <div className='relative h-44 w-full '>
                     <Image src={project.image} alt='my projects' fill   />  
                     </div>
-                    </CardContent>
-            
-            
-            <CardFooter className='flex flex-col w-full justify-center items-center'>
-                    
-                {/* {showProjectDetails ? */}
+
+                    {/* {showProjectDetails ? */}
                 <Sheet>
                 <SheetTrigger asChild>
-                   <Button variant='outline' className='rounded-full text-white bg-black'> 
+                   <Button variant='outline' 
+                   className='rounded-full bg-black text-white py-4 '> 
                    View Details</Button>
                 </SheetTrigger>
                 
                 <SheetContent side='bottom' className='flex flex-col w-full
-                justify-center items-center bg-black text-white text-center font-md'>
+                justify-center items-center  text-center font-md'>
                      <div className='relative w-32 h-24 '>
                 <Image src='/images/logo.png' alt='logo' className='' fill />
             </div>
-            <div>
+            <div className='text-black'>
             <p className='text-xl font-extrabold  '>Project Name: {project.projectname}</p>
             <p className='text-l '>Project Usecase: {project.usecase}</p> 
             <p className='text-l '>Project Frontend: {project.frontend}</p>
@@ -157,7 +156,8 @@ const ProjectPage = ()=>{
             <p className='text-l '>Project Cloud: {project.cloud}</p> 
             <p className='text-l '>Project APIs: {project.api}</p>     
             <p className='text-l '>Project Status: {project.status}</p>
-            <Button variant='outline' className='  mt-2 bg-black rounded-full  ' asChild>
+            <Button variant='outline' className='  mt-2 bg-blue-900
+             rounded-full bg-black/80 text-white  ' asChild>
                 <Link href={project.route} className='animate-pulse'>
                 View Project Website
                     </Link>
@@ -165,12 +165,7 @@ const ProjectPage = ()=>{
             </div>
             </SheetContent>
             </Sheet>
-            {/* </div>:null */}
-            
-            
-
-    
-             </CardFooter>
+                    </CardContent>
              
                 </Card>
             </div>
