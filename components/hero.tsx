@@ -15,7 +15,7 @@ const Hero = ()=>{
       [
         "Advance AI Models",
         "Innovative ML Approach",
-        "Cutting edge technology"
+        "Cutting Edge Technologies"
       ]
     )
   }, [])
