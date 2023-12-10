@@ -10,11 +10,14 @@ const PrivacyPage = () => {
           <Link href='/'>Back to Home</Link>
         </Button>
       <h1 className="text-3xl font-semibold mb-4">Privacy Policy</h1>
-      <p className="mb-4">Last updated: October 24, 2023</p>
+      <p className="mb-4">Last updated: December 10, 2023</p>
 
       <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
       <p className="mb-4">
-        Welcome to MyAfros, a platform offering AI services. 
+        Welcome to the Portfolio Webpage. 
+        This project has links to other projects and it is also used as a 
+        Reference website for possible business partnership. 
+        The owner of this Portfolio also owns MyAfros project.
         This Privacy Policy explains how we collect, use, 
         and protect your personal information. By accessing or using our services,
          you consent to the practices described in this policy.

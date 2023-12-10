@@ -15,8 +15,8 @@ const footerItems: any = [
         myafrosurl: 'https://myafros.com',
         copyright: `
         ${'Copyright © '} ${new Date().getFullYear()}`,
-        contact: 'Contact',
-        about: 'About',
+        contact: '/contactpage',
+        about: '/aboutpage',
         projects: 'See more projects',
         privacy: '/privacy',
         terms: '/terms',
@@ -66,8 +66,8 @@ export const Footer = ()=>{
     {/* Second Column */}
     <div className='text-blue-800 flex flex-col h-24'>
       <p className='text-white'>Information</p>
-    <p>{footer.contact}</p>
-    <p>{footer.about}</p>
+      <Link href={footer.about}>About</Link>
+      <Link href={footer.contact}>Contact</Link>
     
     <div className='flex justify-center gap-5 py-4'>
     <a href='https://www.linkedin.com/in/olatunjioluwaseun/'>
