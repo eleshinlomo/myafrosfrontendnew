@@ -16,10 +16,10 @@ export const NewNavBar = ()=>{
         <div>
             
 
-            <div className='relative shadow-3xl flex flex-1 justify-between
-            md:justify-around pt-5 px-4 '>
+            <div className='py-5 relative shadow-3xl flex flex-1 justify-between
+            md:justify-around  px-4 bg-black '>
                 
-                <div className='hidden md:flex relative w-24 h-12 rounded-full bg-black m-2 '>
+                <div className='hidden md:flex relative w-24 h-12 rounded-full   '>
                     <Image src='/logo.png' alt='logo' fill />
                 </div>
 

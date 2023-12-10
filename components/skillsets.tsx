@@ -12,7 +12,7 @@ export const Col3Cta = ()=>{
                
                {/* Col One */}
                 <div>
-                <p className="text-2xl font-extrabold py-4 "> 
+                <p className="text-2xl font-extrabold py-4 text-muted-foreground "> 
                 Languages
                 </p>
                 <p className=" py-4 px-4">Javascript, Python, Typescript,
@@ -22,7 +22,7 @@ export const Col3Cta = ()=>{
 
                  {/* Col Two */}
                 <div>
-                <p className="text-2xl font-extrabold py-4 "> 
+                <p className="text-2xl font-extrabold py-4 text-muted-foreground "> 
                 Frameworks
                 </p>
                 <p className=" py-4 px-4">Django, React, Next JS, Node JS, MUI, TAILWIND!</p>
@@ -31,7 +31,7 @@ export const Col3Cta = ()=>{
 
                  {/* Col3 */}
                 <div>
-                <p className="text-2xl font-extrabold py-4 "> 
+                <p className="text-2xl font-extrabold py-4 text-muted-foreground "> 
                 Cloud
                 </p>
                 <p className=" py-4 px-4">
@@ -41,7 +41,7 @@ export const Col3Cta = ()=>{
 
                 {/* Col4 */}
                 <div>
-                <p className="text-2xl font-extrabold py-4 "> 
+                <p className="text-2xl font-extrabold py-4 text-muted-foreground"> 
                 Database
                 </p>
                 <p className=" py-4 px-6 flex flex-col md:flex lg-flex">

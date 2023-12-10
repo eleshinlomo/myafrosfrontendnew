@@ -103,51 +103,58 @@ const ProjectPage = ()=>{
         <div className='w-full h-full bg-gray-900 text-white'>
 
             <div className='text-center'>
-                <p className='leading-8 text-3xl font-extrabold
-                  py-8'>PROJECTS</p>
+                <p className='leading-8 text-2xl font-extrabold
+                  pt-8'>PROJECTS</p>
             </div>
 
-<div className=' grid grid-flow-row  md:grid-cols-4
-         py-8 px-6  w-full gap-3'>
+<div className=' h-auto grid grid-flow-row  md:grid-cols-4 
+md:place-items-center
+         py-8 px-1  w-full gap-2'>
           {
             Projects.map((project, index)=>
 
             <div key={index} className=''>
 
             <div>
-                <Card className='grid grid-flow-row  md:grid-flow-row
+                <Card className='
                 gap-3 rounded-2xl bg-gray-900
-                     text-center  w-full md:w-72 h-auto md:ml-10 
+                     text-center  w-full md:w-44 h-72
                  '
                  >
                 <CardHeader className=''>
-                <div className='flex justify-center items-center gap-0 
-                flex-1 font-extrabold'>
-               
-        <p className='text-white'>
+                <div className=' font-extrabold'>
+               <p className='text-white'>
             Project Name: {project.projectname}</p>
+        
             </div>
-                    </CardHeader>
+            </CardHeader>
+         
+                    <CardContent className=''>
 
-                    <CardContent className=' w-full   '>
-                    <div className='relative h-44 w-full '>
-                    <Image src={project.image} alt='my projects' fill   />  
-                    </div>
+                    
 
                     {/* {showProjectDetails ? */}
                 <Sheet>
-                <SheetTrigger asChild>
+                <SheetTrigger className='mb-3' asChild>
+                  <div className='flex flex-col justify-center items-center'>
+                  <div className='relative h-44 w-72 md:w-32'>
+                    <Image src={project.image} alt='my projects' fill   />  
+                    </div>
+                   <div className='h-1/2 w-full'>
                    <Button variant='outline' 
                    className='rounded-full bg-black text-white py-4 '> 
                    View Details</Button>
+                   </div>
+                   </div>
                 </SheetTrigger>
                 
                 <SheetContent side='bottom' className='flex flex-col w-full
-                justify-center items-center  text-center font-md'>
+                justify-center items-center bg-gray-900  
+                text-center text-white font-md'>
                      <div className='relative w-32 h-24 '>
                 <Image src='/images/logo.png' alt='logo' className='' fill />
             </div>
-            <div className='text-black'>
+            <div className=''>
             <p className='text-xl font-extrabold  '>Project Name: {project.projectname}</p>
             <p className='text-l '>Project Usecase: {project.usecase}</p> 
             <p className='text-l '>Project Frontend: {project.frontend}</p>
@@ -160,12 +167,12 @@ const ProjectPage = ()=>{
              rounded-full bg-black/80 text-white  ' asChild>
                 <Link href={project.route} className='animate-pulse'>
                 View Project Website
-                    </Link>
+                </Link>
             </Button>
             </div>
             </SheetContent>
             </Sheet>
-                    </CardContent>
+            </CardContent>
              
                 </Card>
             </div>
