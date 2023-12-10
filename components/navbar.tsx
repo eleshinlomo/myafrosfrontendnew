@@ -33,7 +33,9 @@ export const NewNavBar = ()=>{
                  <MobileMenu />
                 </div>
                 
+                <div className='hidden md:flex'>
                 <Navbarlinks />
+                </div>
             </div>
 
 

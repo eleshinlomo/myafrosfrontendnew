@@ -3,12 +3,12 @@ import type { Metadata } from 'next'
 
 
 export const metadata: Metadata = {
-  title: 'Home',
-  description: 'A Portfolio Page',
+  title: 'About',
+  description: 'About Page for Myafros',
 }
 
 
-export default function HomeLayout({
+export default function AboutLayout({
   children,
 }: {
   children: React.ReactNode

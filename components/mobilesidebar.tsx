@@ -2,32 +2,26 @@ import Link from "next/link"
 import { Projects } from "./projects"
 import { Button } from "./ui/button"
 import { ScanFaceIcon } from "lucide-react"
+import { Navbarlinks } from "./navbarlinks"
+import Image from 'next/image'
 
 
 export const MobileSidebar = ()=>{
 
     return (
         <div>
-            {Projects ?
-            <div>
-            {Projects.map((project, index)=>
-             
-             <div key={index}>
-            <Button variant='ghost' size='icon'>
-            {project.icon}
-            </Button>
-
-            <Button variant='ghost' className="" asChild>
-                <Link href={project.route}>{project.projectname}</Link>
-            </Button>
             
+            <div className="flex gap-2">
+            <div className="relative w-16 h-8">
+                <Image src='/logo.png' alt='logo' fill />
             </div>
 
-            )}
-            
-            </div>:null
-
-            }
+            <p className="font-extrabold">Portfolio</p>
+            </div>
+            <div>
+            <Navbarlinks />
+            </div>
+           
         </div>
     )
 

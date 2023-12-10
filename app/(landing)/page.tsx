@@ -21,19 +21,7 @@ const HomePage = () => {
       
       <div className=' overflow-hidden flex flex-col justify-center  bg-gray-900'>
 
-      <NewNavBar />
-        
-       <div 
-       
-      className='' 
-      //  style={{
-      //   backgroundImage: `url('/bg/load.gif')`,
-      //   backgroundRepeat: 'no-repeat',
-      //   backgroundPosition: 'top',
-      //   mixBlendMode: 'hard-light',
-      //   backgroundSize: '400px'
-      //   }}
-        >
+      
       
       <Hero />
       <Col3Cta />
@@ -42,9 +30,9 @@ const HomePage = () => {
       
       
       </div>
-      <Footer />
+      
       </div>
-    </div>
+    
   )
 }
 

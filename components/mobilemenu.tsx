@@ -2,23 +2,30 @@ import { MenuIcon} from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet"
 import { Button } from "./ui/button"
 import { MobileSidebar } from "./mobilesidebar"
+import { Navbarlinks } from "./navbarlinks"
+import Link from 'next/link'
+
 
 export const MobileMenu = ()=>{
     return (
         <div>
             <Sheet>
-                <SheetTrigger>
-        <Button variant='ghost' size='icon' className="md:hidden mt-5" asChild>
+                <SheetTrigger >
+           <Button size='icon' asChild className="md:hidden">
             <MenuIcon />
-        </Button>
+            </Button>
+        
                 </SheetTrigger>
-                <SheetContent side='left' className="bg-gray-900 text-white">
-                    <p className="text-2xl">Quick Links</p>
-
-                    <p className="lg py-6">Projects</p>
-                    <MobileSidebar />
+            
+                <SheetContent side='left' className=" bg-gray-900">
+                    <div>
+                        <MobileSidebar />
+                    </div>
                 </SheetContent>
             </Sheet>
         </div>
     )
 }
+
+
+

@@ -100,16 +100,19 @@ const ProjectPage = ()=>{
 
 
     return (
-        <div className='w-full h-full bg-gray-900 text-white'>
+        <div className='w-auto h-full bg-gradient-r 
+        from-black via-white to-gray-100 text-black shadow-2xl'>
 
             <div className='text-center'>
-                <p className='leading-8 text-2xl font-extrabold
+                <p className='leading-8 text-white text-sm md:text-2xl 
+                font-extrabold 
                   pt-8'>PROJECTS</p>
             </div>
 
-<div className=' h-auto grid grid-flow-row  md:grid-cols-4 
-md:place-items-center
-         py-8 px-1  w-full gap-2'>
+<div className=' h-auto w-auto grid grid-row-flow sm:grid-cols-2  
+md:grid-cols-4 
+place-items-center 
+         py-8 px-1   gap-2'>
           {
             Projects.map((project, index)=>
 
@@ -117,13 +120,14 @@ md:place-items-center
 
             <div>
                 <Card className='
-                gap-3 rounded-2xl bg-gray-900
-                     text-center  w-full md:w-44 h-72
+                gap-3 rounded-2xl 
+                     text-center  w-72 sm:w-72 md:w-44 h-72 
+                     shadow-2xl bg-gray-200
                  '
                  >
                 <CardHeader className=''>
                 <div className=' font-extrabold'>
-               <p className='text-white'>
+               <p className=''>
             Project Name: {project.projectname}</p>
         
             </div>
@@ -137,10 +141,10 @@ md:place-items-center
                 <Sheet>
                 <SheetTrigger className='mb-3' asChild>
                   <div className='flex flex-col justify-center items-center'>
-                  <div className='relative h-44 w-72 md:w-32'>
+                  <div className='relative h-32 w-32 md:w-32'>
                     <Image src={project.image} alt='my projects' fill   />  
                     </div>
-                   <div className='h-1/2 w-full'>
+                   <div className='h-1/2 w-auto'>
                    <Button variant='outline' 
                    className='rounded-full bg-black text-white py-4 '> 
                    View Details</Button>
@@ -151,7 +155,7 @@ md:place-items-center
                 <SheetContent side='bottom' className='flex flex-col w-full
                 justify-center items-center bg-gray-900  
                 text-center text-white font-md'>
-                     <div className='relative w-32 h-24 '>
+                     <div className='relative w-32 h-12 shadow-2xl '>
                 <Image src='/images/logo.png' alt='logo' className='' fill />
             </div>
             <div className=''>
