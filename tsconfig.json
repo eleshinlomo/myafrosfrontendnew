@@ -34,7 +34,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "app/(policies)/terms"  ],
+, "app/(policies)/terms", "app/about"  ],
   "exclude": [
     "node_modules"
   ]

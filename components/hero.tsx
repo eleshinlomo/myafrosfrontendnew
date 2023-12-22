@@ -49,10 +49,11 @@ const Hero = ()=>{
 
 
 <p className="flex-wrap text-start  pr-8 ">
-Explore the portfolio to discover a collection of works, 
-reflecting commitment to excellence, attention to detail, 
-and a relentless pursuit of excellence. 
-Let&apos;s collaborate and turn ideas into extraordinary experiences.</p>
+In a fast-paced digital era, where information overload is a 
+constant challenge, our project, SmartAssistant, aims to simplify 
+and enhance daily tasks through the power of artificial intelligence. 
+SmartAssistant is not just a voice-activated helper; it&apos;s a comprehensive tool designed to streamline your workflow, provide insightful information, 
+and make your life easier.</p>
 
 
 <div className="flex flex-col md:flex-row pt-8 gap-3 ">

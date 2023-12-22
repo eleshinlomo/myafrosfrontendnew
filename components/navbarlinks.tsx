@@ -12,7 +12,7 @@ export const Navbarlinks = () => {
     <div>
                 <div className='flex flex-col mt-12 md:flex-row gap-3 md:mt-2 font-extrabold'>
                 <Link href='/' className='mt-2'>Home</Link>
-                <Link href='/aboutpage' className='mt-2'>About</Link>
+                <Link href='/aboutpage neon-blue' className='mt-2'>About</Link>
                 <Link href='/contactpage' className='mt-2'>Contact</Link>
                
                <div className='flex '>

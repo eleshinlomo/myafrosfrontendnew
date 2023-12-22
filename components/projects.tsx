@@ -147,7 +147,11 @@ place-items-center
                    <div className='h-1/2 w-auto'>
                    <Button variant='outline' 
                    className='rounded-full bg-black text-white py-4 '> 
-                   View Details</Button>
+                   {project.projectname === "Fixupe(AI)"? <div>
+                    <p>View Details</p>
+                    <p className='text-red-500 animate-pulse'>NEW</p>
+                   </div> :
+                   "View Details"}</Button>
                    </div>
                    </div>
                 </SheetTrigger>
