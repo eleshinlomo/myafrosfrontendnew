@@ -49,20 +49,6 @@ export const Projects = [
         route: 'https://solarit.vercel.app/'
     },
 
-    {    
-        id:2,
-        projectname: "Techcoy",
-        icon: <BotIcon />,
-        api: 'REST',
-        usecase: "Blog",
-        frontend: "Wordpress",
-        backend: "Not Applicable",
-        image: '/projects/techoynew.png',
-        status: 'Completed',
-        database: 'Not Applicable',
-        cloud: 'AWS',
-        route: 'https://www.techcoy.com/'
-    },
     {   
         id:3,
         projectname: "Date Me(AI)",
@@ -109,8 +95,8 @@ const ProjectPage = ()=>{
                   pt-8'>PROJECTS</p>
             </div>
 
-<div className=' h-auto w-auto grid grid-row-flow sm:grid-cols-2  
-md:grid-cols-4 
+<div className=' h-auto w-auto grid grid-row-flow  
+md:grid-cols-3
 place-items-center 
          py-8 px-1   gap-2'>
           {
