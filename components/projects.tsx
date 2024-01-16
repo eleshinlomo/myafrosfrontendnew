@@ -107,7 +107,7 @@ place-items-center
             <div>
                 <Card className='
                 gap-3 rounded-2xl 
-                     text-center  w-72 sm:w-72 md:w-44 h-72 
+                     text-center   
                      shadow-2xl bg-gray-200
                  '
                  >
@@ -126,18 +126,14 @@ place-items-center
                     {/* {showProjectDetails ? */}
                 <Sheet>
                 <SheetTrigger className='mb-3' asChild>
-                  <div className='flex flex-col justify-center items-center'>
-                  <div className='relative h-32 w-32 md:w-32'>
+                  <div className='flex flex-col justify-center items-center gap-3'>
+                  <div className='relative w-72 h-44 md-w-72 md-h-44'>
                     <Image src={project.image} alt='my projects' fill   />  
                     </div>
                    <div className='h-1/2 w-auto'>
                    <Button variant='outline' 
                    className='rounded-full bg-black text-white py-4 '> 
-                   {project.projectname === "Fixupe(AI)"? <div>
-                    <p>View Details</p>
-                    <p className='text-red-500 animate-pulse'>NEW</p>
-                   </div> :
-                   "View Details"}</Button>
+                   View Details</Button>
                    </div>
                    </div>
                 </SheetTrigger>
