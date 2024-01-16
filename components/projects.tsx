@@ -21,26 +21,40 @@ import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 export const Projects = [
     {   
         id:1,
-        projectname: "Fixupe(AI)",
+        projectname: "Fixupe",
         icon: <BotIcon />,
         usecase: "AI tools",
         api: 'OpenAI, Langchain, REST',
         frontend: "Next js/Typescript",
         backend: "Python/Django",
-        image: '/images/girl10.png',
+        image: '/images/ai_girl2.png',
         status: 'On-going',
         database: 'postGreSQL/Pinecone',
         cloud: 'Vercel',
         route: 'https://www.fixupe.com'
     },
+    {
+    id:2,
+        projectname: "AppSec Engineers",
+        icon: <BotIcon />,
+        usecase: "AI tools",
+        api: 'OpenAI, Langchain, REST',
+        frontend: "N/A",
+        backend: "N/A",
+        image: '/images/appsec.png',
+        status: 'completed',
+        database: 'postGreSQL/Pinecone',
+        cloud: 'AWS',
+        route: 'https://www.appsecengineer.com'
+    },
 
     {    
-        id:2,
-        projectname: "Solarit(AI)",
+        id:3,
+        projectname: "Solarit",
         icon: <BotIcon />,
         api: 'REST',
         usecase: "Knowledgebase",
-        frontend: "Next Js",
+        frontend: "Next js/Typescript",
         backend: "Python/Django",
         image: '/projects/solar_pic2.jpg',
         status: 'On-going',
@@ -50,8 +64,8 @@ export const Projects = [
     },
 
     {   
-        id:3,
-        projectname: "Date Me(AI)",
+        id:4,
+        projectname: "Date Me",
         icon: <BotIcon />,
         usecase: "Dating Platform",
         api: 'OpenAI, Langchain, REST',
@@ -96,7 +110,7 @@ const ProjectPage = ()=>{
             </div>
 
 <div className=' h-auto w-auto grid grid-row-flow  
-md:grid-cols-3
+md:grid-cols-4
 place-items-center 
          py-8 px-1   gap-2'>
           {
@@ -139,7 +153,7 @@ place-items-center
                 </SheetTrigger>
                 
                 <SheetContent side='bottom' className='flex flex-col w-full
-                justify-center items-center bg-gray-900  
+                justify-center items-center bg-black
                 text-center text-white font-md'>
                      <div className='relative w-32 h-12 shadow-2xl '>
                 <Image src='/images/logo.png' alt='logo' className='' fill />
