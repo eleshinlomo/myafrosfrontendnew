@@ -19,9 +19,11 @@ export const NewNavBar = ()=>{
             <div className='py-5 relative shadow-3xl flex flex-1 justify-between
             md:justify-around  px-4 bg-black '>
                 
+                <Link href='/'>
                 <div className='hidden md:flex relative w-24 h-12 rounded-full   '>
                     <Image src='/logo.png' alt='logo' fill />
                 </div>
+                </Link>
 
                 {/* <div className='mt-2 shadow-2xl bg-white rounded-full py-2 px-2'>
                  <p className='text-black'>

@@ -71,7 +71,7 @@ export const Projects = [
         api: 'OpenAI, Langchain, REST',
         frontend: "Next js/Typescript",
         backend: "Python/Django",
-        image: '/projects/dateme.png',
+        image: '/images/man-and-woman-removebg-preview.png',
         database: 'postGreSQL/Pinecone',
         cloud: 'Vercel',
         status: 'On-going',
@@ -110,9 +110,9 @@ const ProjectPage = ()=>{
             </div>
 
 <div className=' h-auto w-auto grid grid-row-flow  
-md:grid-cols-4
-place-items-center 
-         py-8 px-1   gap-2'>
+md:grid-cols-2
+
+         pt-4 px-4   gap-2'>
           {
             Projects.map((project, index)=>
 
@@ -141,7 +141,7 @@ place-items-center
                 <Sheet>
                 <SheetTrigger className='mb-3' asChild>
                   <div className='flex flex-col justify-center items-center gap-3'>
-                  <div className='relative w-72 h-44 md-w-72 md-h-44'>
+                  <div className='relative w-72 h-44 md-w-72 md-h-72'>
                     <Image src={project.image} alt='my projects' fill   />  
                     </div>
                    <div className='h-1/2 w-auto'>
