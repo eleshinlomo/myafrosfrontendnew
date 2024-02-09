@@ -26,7 +26,7 @@ export const Projects = [
         usecase: "AI tools",
         api: 'OpenAI, Langchain, REST',
         frontend: "Next js/Typescript",
-        backend: "Python/Django",
+        backend: "Python/Django, FastAPI",
         image: '/images/ai_girl2.png',
         status: 'On-going',
         database: 'postGreSQL/Pinecone',

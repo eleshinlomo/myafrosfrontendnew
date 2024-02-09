@@ -25,7 +25,7 @@ export const Col3Cta = ()=>{
                 <p className="text-2xl font-extrabold py-4 text-muted-foreground "> 
                 Frameworks
                 </p>
-                <p className=" py-4 px-4">Django, React, Next JS, Node JS, MUI, TAILWIND!</p>
+                <p className=" py-4 px-4">Django, React, FastAPI, Next JS, Node JS, Shadcn, MUI, Tailwind!</p>
                 
                 </div>
 
