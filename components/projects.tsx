@@ -33,6 +33,20 @@ export const Projects = [
         cloud: 'Vercel',
         route: 'https://www.fixupe.com'
     },
+    {   
+        id:1,
+        projectname: "Petrolage",
+        icon: <BotIcon />,
+        usecase: "Business",
+        api: 'REST',
+        frontend: "Next js/Typescript",
+        backend: "Node js",
+        image: '/images/ai_team.png',
+        status: 'On-going',
+        database: 'mongoDB/Atlas',
+        cloud: 'Vercel',
+        route: 'https://www.petrolage.tech'
+    },
     {
     id:2,
         projectname: "AppSec Engineers",
@@ -46,21 +60,6 @@ export const Projects = [
         database: 'postGreSQL/Pinecone',
         cloud: 'AWS',
         route: 'https://www.appsecengineer.com'
-    },
-
-    {    
-        id:3,
-        projectname: "Solarit",
-        icon: <BotIcon />,
-        api: 'REST',
-        usecase: "Knowledgebase",
-        frontend: "Next js/Typescript",
-        backend: "Python/Django",
-        image: '/projects/solar_pic2.jpg',
-        status: 'On-going',
-        database: 'PostgreSQL',
-        cloud: 'AWS',
-        route: 'https://solarit.vercel.app/'
     },
 
     {   
@@ -110,7 +109,7 @@ const ProjectPage = ()=>{
             </div>
 
 <div className=' h-auto w-auto grid grid-row-flow  
-md:grid-cols-2
+md:grid-cols-4
 
          pt-4 px-4   gap-2'>
           {
@@ -141,7 +140,7 @@ md:grid-cols-2
                 <Sheet>
                 <SheetTrigger className='mb-3' asChild>
                   <div className='flex flex-col justify-center items-center gap-3'>
-                  <div className='relative w-72 h-44 md-w-72 md-h-72'>
+                  <div className='relative w-full h-44 md-w-72 md-h-72'>
                     <Image src={project.image} alt='my projects' fill   />  
                     </div>
                    <div className='h-1/2 w-auto'>
