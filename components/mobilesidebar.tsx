@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { Projects } from "./projects"
 import { Button } from "./ui/button"
 import { ScanFaceIcon } from "lucide-react"
 import { Navbarlinks } from "./navbarlinks"
