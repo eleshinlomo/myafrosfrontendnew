@@ -4,7 +4,7 @@ import { Button } from "./ui/button"
 export const Col3Cta = ()=>{
     return (
         <div>
-            <div className="text-center grid md:grid-cols-4 
+            <div className="text-center grid md:grid-cols-5
             grid-flow-row  mx-5 mt-4
             shadow-2xl  font-bold rounded-2xl 
              gap-2
@@ -29,7 +29,17 @@ export const Col3Cta = ()=>{
                 
                 </div>
 
-                 {/* Col3 */}
+                 {/* Col Three */}
+                 <div>
+                <p className="text-2xl font-extrabold py-4 text-muted-foreground "> 
+                GenAI
+                </p>
+                <p className=" py-4 px-4">PyTorch, TensorFlow, Keras,Langchain,
+                 Numpy, Pandas, OpenAI, Mlops</p>
+                
+                </div>
+
+                 {/* Col Four */}
                 <div>
                 <p className="text-2xl font-extrabold py-4 text-muted-foreground "> 
                 Cloud
