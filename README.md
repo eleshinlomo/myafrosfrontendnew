@@ -51,8 +51,8 @@ Frontend Layer:
   in the pages directory corresponds to a route in the application.
 - Components: Reusable UI components are organized in the components directory
   facilitating modularity and code reusability.
-- Styling: CSS stylesheets or CSS-in-JS libraries like Styled Components are used
-  for styling components and pages.
+- Styling: Tailwind and CSS stylesheets or CSS-in-JS libraries like Styled
+  Components, are used for styling components and pages.
 
 
 ***APIs and Endpoint***
@@ -65,7 +65,7 @@ Currently, the portfolio project itself does not utilize any APIs or endpoints. 
 - SQL
 - MongoDB
 - AWS
-- 
+- Vercel
 
 
 **Testing**:
