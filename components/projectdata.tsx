@@ -48,6 +48,20 @@ export const Projects = [
         route: 'https://imgbot.vercel.app'
     },
     {   
+        id:5,
+        projectname: "Crypto AI Trader",
+        icon: <BotIcon />,
+        usecase: "AI Crypto Trader",
+        api: 'OpenAI, Langchain, REST',
+        frontend: "Next js/Typescript",
+        backend: "Node js",
+        image: '/images/man-and-woman-removebg-preview.png',
+        database: 'postGreSQL',
+        cloud: 'Vercel',
+        status: 'On-going',
+        route: 'https://cryptoaitrader.vercel.app/'
+    },
+    {   
         id:3,
         projectname: "Petrolage",
         icon: <BotIcon />,
@@ -76,20 +90,7 @@ export const Projects = [
         route: 'https://www.appsecengineer.com'
     },
 
-    {   
-        id:5,
-        projectname: "Socialize",
-        icon: <BotIcon />,
-        usecase: "Social Media Project",
-        api: 'OpenAI, Langchain, REST',
-        frontend: "Next js/Typescript",
-        backend: "Python/Django",
-        image: '/images/man-and-woman-removebg-preview.png',
-        database: 'postGreSQL/Pinecone',
-        cloud: 'Vercel',
-        status: 'On-going',
-        route: 'https://dateme.vercel.app'
-    },
+    
     {   
         id:4,
         projectname: "Resume Maker",
