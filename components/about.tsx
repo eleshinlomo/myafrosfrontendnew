@@ -7,17 +7,26 @@ export const About = () => {
 
 <div className='mt-12  flex flex-col flex-wrap 
                         flex-1 w-auto gap-4 px-6 text-black'>
-<h2>ABOUT PAGE</h2>
 
 <div className=' md:flex flex-1 gap-2 pb-4'>
-<p className='w-full  md:mr-16 flex flex-wrap'>
-A passionate Software Engineer with a knack 
-                            for turning ideas into robust, scalable, and user-friendly 
-                            solutions. 
-                            My journey in the world of coding began with a 
-                            curiosity to understand the magic behind technology, 
-                            and it has evolved into a commitment to crafting high-quality software.
-                            </p>
+<div className="p-6">
+  <h1 className="text-3xl font-bold mb-4">About page</h1>
+  <p className="text-lg mb-4">
+    MyAfros is a dynamic portfolio web application showcasing a 
+    comprehensive array of personal projects meticulously 
+    crafted by myself. Spanning from robust CRM systems to 
+    cutting-edge Crypto AI traders and innovative image-generating bots, 
+    each project embodies a blend of creativity, functionality, 
+    and technical prowess.
+  </p>
+  <p className="text-lg mb-4">
+    These projects cater to a diverse spectrum of needs, 
+    catering to both nascent startups and established enterprises alike. 
+    With a focus on delivering tangible value and efficiency, 
+    MyAfros stands as a testament to my dedication to innovation and 
+    excellence in software development.
+  </p>
+</div>
                             
     <div className='relative w-full  h-72'>
     <Image src='/boxes.png' alt='a man&apos;s picture' fill />
