@@ -6,7 +6,7 @@ interface BlogProps {
     description: string
 }
 
-const YouTubeVideo = ({ videoId, title, description }: BlogProps) => {
+const  YouTubeVideo = ({ videoId, title, description }: any) => {
   return (
     <div className="max-w-4xl mx-auto">
       <div className="relative pb-9/16">
