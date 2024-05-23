@@ -5,7 +5,7 @@ interface TypewriterProps {
     customText: string[]
 }
 
-const Typewriter: React.FC<TypewriterProps> = ({customText}) => {
+const Typewriter = ({customText}: TypewriterProps) => {
 
   const [ text ] = useTypewriter({
     words:customText,

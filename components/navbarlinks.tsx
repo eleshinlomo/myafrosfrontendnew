@@ -14,6 +14,7 @@ export const Navbarlinks = () => {
                 <Link href='/' className='mt-2'>Home</Link>
                 <Link href='/aboutpage' className='mt-2'>About</Link>
                 <Link href='/contactpage' className='mt-2'>Contact</Link>
+                <Link href='/blogpage' className='mt-2'>Blog</Link>
                
                <div className='flex '>
                <ProjectsDropDown /> 

@@ -1,5 +1,9 @@
 
-export const APILogos = [
+interface LogoProps {
+   name: string;
+   url: string;
+}
+export const APILogos: LogoProps[]  = [
    {
     name: 'Langchain',
     url: '/logos/langchain3.png'

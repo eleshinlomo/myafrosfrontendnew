@@ -1,4 +1,5 @@
 // components/useState
+import React from 'react'
 import Image from 'next/image'
 import { Button } from './ui/button'
 import Link from 'next/link'
@@ -16,9 +17,23 @@ import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
   
+interface ProjectProps {
+    id: number;
+    projectname: string;
+    icon: React.ReactNode;
+    usecase: string;
+    api: string;
+    frontend: string;
+    backend: string;
+    image: string;
+    status: string;
+    database: string;
+    cloud: string;
+    route: string;
 
+}
 
-export const Projects = [
+export const Projects: ProjectProps[] = [
     {   
         id:1,
         projectname: "Fixupe",
