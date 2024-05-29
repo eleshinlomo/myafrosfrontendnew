@@ -17,7 +17,7 @@ import { useState } from 'react'
 import { cn } from '@/lib/utils'
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
   
-interface ProjectProps {
+export interface ProjectProps {
     id: number;
     projectname: string;
     icon: React.ReactNode;
