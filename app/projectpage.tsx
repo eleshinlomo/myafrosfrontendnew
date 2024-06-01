@@ -30,10 +30,12 @@ const ProjectsPage = ()=> {
           <div className="py-12 md:py-20">
   
             {/* Section header */}
-            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20 
+            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-4
             text-muted-foreground font-extrabold">
-              <h2 className="h2 mb-4">Explore the projects</h2>
-              <p className="text-xl text-gray-600">Check out some current projects.</p>
+              <h2 className="h2 mb-4">One login gives you access to all the apps
+              </h2>
+              <p className="text-xl text-white">
+                {'Myafros Apps'.toUpperCase()}</p>
             </div>
   
             
@@ -58,45 +60,14 @@ const ProjectsPage = ()=> {
                 <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
                   {project.projectname}</h4>
                 <p className="text-gray-600 text-center">{project.usecase}</p>
-
-                  
-                    {/* {showProjectDetails ? */}
-                <Sheet>
-                <SheetTrigger className='mb-3' asChild>
-                  <div className='flex flex-col justify-center items-center gap-3'>
-                  
-                   <div className='h-1/2 w-auto'>
-                   <Button variant='outline' 
-                   className='rounded-full bg-black text-white py-4 '> 
-                   View Details</Button>
-                   </div>
-                   </div>
-                </SheetTrigger>
-                
-                <SheetContent side='bottom' className='flex flex-col w-full
-                justify-center items-center bg-black
-                text-center text-white font-md'>
-                     <div className='relative w-32 h-12 shadow-2xl '>
-                <Image src='/images/logo.png' alt='logo' className='' fill />
-            </div>
-            <div className=''>
-            <p className='text-xl font-extrabold  '>Project Name: {project.projectname}</p>
-            <p className='text-l '>Project Usecase: {project.usecase}</p> 
-            <p className='text-l '>Project Frontend: {project.frontend}</p>
-            <p className='text-l '>Project Backend: {project.backend}</p>  
-            <p className='text-l '>Project Database: {project.database}</p>
-            <p className='text-l '>Project Cloud: {project.cloud}</p> 
-            <p className='text-l '>Project APIs: {project.api}</p>     
-            <p className='text-l '>Project Status: {project.status}</p>
-            <Button variant='outline' className='  mt-2 bg-blue-900
-             rounded-full bg-black/80 text-white  ' asChild>
-                <Link href={project.route} className='animate-pulse'>
-                View Project Website
+                <Button variant='default' className='   
+                 rounded-2xl  text-white  ' asChild>
+                <Link href={project.route} className=''>
+                View App
                 </Link>
-            </Button>
-            </div>
-            </SheetContent>
-            </Sheet>
+               </Button>
+                  
+                   
 
               </div>)}
               </div>

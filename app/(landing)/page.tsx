@@ -19,7 +19,8 @@ const HomePage = () => {
     <div>
 
       
-      <div className=' overflow-hidden flex flex-col justify-center  bg-gray-900'>
+      <div className=' overflow-hidden flex flex-col justify-center 
+       bg-gray-900'>
 
       
       

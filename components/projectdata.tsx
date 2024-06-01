@@ -36,10 +36,10 @@ export interface ProjectProps {
 export const Projects: ProjectProps[] = [
     {   
         id:1,
-        projectname: "Fixupe",
+        projectname: "CRM",
         icon: <BotIcon />,
         usecase: "CRM + GenAI",
-        api: 'OpenAI, Langchain, REST',
+        api: 'OpenAI, REST',
         frontend: "Next js/Typescript",
         backend: "Python/Django, FastAPI",
         image: '/images/ai_girl2.png',
@@ -62,63 +62,64 @@ export const Projects: ProjectProps[] = [
         cloud: 'Vercel',
         route: 'https://imgbot.vercel.app'
     },
+   
+    {   
+        id:3,
+        projectname: "Test Reader",
+        icon: <BotIcon />,
+        usecase: "text to voice",
+        api: 'REST',
+        frontend: "Next js/Typescript",
+        backend: "FastAPI",
+        image: '/images/ai_team.png',
+        status: 'On-going',
+        database: 'postGRES',
+        cloud: 'Vercel',
+        route: 'https://www.fixupe.com/dashboard/textreaderpage'
+    },
+    {
+    id:4,
+        projectname: "Transcriber",
+        icon: <BotIcon />,
+        usecase: "Audio to Text",
+        api: 'OpenAI, Langchain, REST',
+        frontend: "Next/Typescript",
+        backend: "FastAPI",
+        image: '/images/appsec.png',
+        status: 'completed',
+        database: 'postGreSQL/Google TTS',
+        cloud: 'Vercel',
+        route: 'https://www.fixupe.com/dashboard/genai/aitranscriber'
+    },
+
+    
+    {   
+        id:4,
+        projectname: "Voice Recorder",
+        icon: <BotIcon />,
+        usecase: "GenAI",
+        api: 'REST',
+        frontend: "Next js/Typescript",
+        backend: "Python/Django",
+        image: '/images/man-and-woman-removebg-preview.png',
+        database: 'postGreSQL/Pinecone',
+        cloud: 'Vercel',
+        status: 'Completed',
+        route: 'https://www.fixupe.com/dashboard/genai/voicerecorder'
+    },
     {   
         id:5,
-        projectname: "Crypto AI Trader",
+        projectname: "Content Writer",
         icon: <BotIcon />,
-        usecase: "Web 3.0",
-        api: 'OpenAI, Langchain, REST',
+        usecase: "GenAI",
+        api: 'OpenAI, REST',
         frontend: "Next js/Typescript",
         backend: "Node js",
         image: '/images/man-and-woman-removebg-preview.png',
         database: 'postGreSQL',
         cloud: 'Vercel',
         status: 'On-going',
-        route: 'https://cryptoaitrader.vercel.app/'
-    },
-    {   
-        id:3,
-        projectname: "Petrolage",
-        icon: <BotIcon />,
-        usecase: "Web app",
-        api: 'REST',
-        frontend: "Next js/Typescript",
-        backend: "Node js",
-        image: '/images/ai_team.png',
-        status: 'On-going',
-        database: 'mongoDB/Atlas',
-        cloud: 'Vercel',
-        route: 'https://www.petrolage.tech'
-    },
-    {
-    id:4,
-        projectname: "AppSec Engineers",
-        icon: <BotIcon />,
-        usecase: "Web app",
-        api: 'OpenAI, Langchain, REST',
-        frontend: "N/A",
-        backend: "N/A",
-        image: '/images/appsec.png',
-        status: 'completed',
-        database: 'postGreSQL/Pinecone',
-        cloud: 'AWS',
-        route: 'https://www.appsecengineer.com'
-    },
-
-    
-    {   
-        id:4,
-        projectname: "Resume Maker",
-        icon: <BotIcon />,
-        usecase: "GenAI",
-        api: 'OpenAI, Langchain, REST',
-        frontend: "Next js/Typescript",
-        backend: "Python/Django",
-        image: '/images/man-and-woman-removebg-preview.png',
-        database: 'postGreSQL/Pinecone',
-        cloud: 'Vercel',
-        status: 'Coming soon',
-        route: ''
+        route: 'https://www.fixupe.com/dashboard/genai/contentwriter'
     },
    
 ]
