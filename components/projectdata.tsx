@@ -65,7 +65,7 @@ export const Projects: ProjectProps[] = [
    
     {   
         id:3,
-        projectname: "Test Reader",
+        projectname: "Text Reader",
         icon: <BotIcon />,
         usecase: "text to voice",
         api: 'REST',
