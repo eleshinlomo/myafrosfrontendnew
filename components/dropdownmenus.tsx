@@ -28,9 +28,9 @@ export const ProjectsDropDown = ()=> {
         <DropdownMenuLabel>Choose project type</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
-          <DropdownMenuRadioItem value="top"><a href='https://imgbot.vercel.app'>Image bot</a></DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value="bottom"><a href='https://fixupe.com'>CRM</a></DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value="right"><a href='https://cryptoaitrader.vercel.app'>AI Trader</a></DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="top"><a href='https://imgbot.myafros.com/'>Image bot</a></DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="bottom"><a href='https://crm.myafros.com/'>CRM</a></DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="right"><a href='https://crm.myafros.com/dashboard/aitranscriber'>Transcriber</a></DropdownMenuRadioItem>
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
