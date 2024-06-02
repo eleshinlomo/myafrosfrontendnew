@@ -46,7 +46,7 @@ export const Projects: ProjectProps[] = [
         status: 'On-going',
         database: 'postGreSQL/Pinecone',
         cloud: 'Vercel',
-        route: 'https://www.fixupe.com'
+        route: 'https://crm.myafros.com/'
     },
     {   
         id:2,
@@ -60,7 +60,7 @@ export const Projects: ProjectProps[] = [
         status: 'On-going',
         database: 'postGreSQL/Pinecone',
         cloud: 'Vercel',
-        route: 'https://imgbot.vercel.app'
+        route: 'https://imgbot.myafros.com/'
     },
    
     {   
@@ -75,7 +75,7 @@ export const Projects: ProjectProps[] = [
         status: 'On-going',
         database: 'postGRES',
         cloud: 'Vercel',
-        route: 'https://www.fixupe.com/dashboard/textreaderpage'
+        route: 'https://crm.myafros.com/dashboard/textreaderpage'
     },
     {
     id:4,
@@ -89,7 +89,7 @@ export const Projects: ProjectProps[] = [
         status: 'completed',
         database: 'postGreSQL/Google TTS',
         cloud: 'Vercel',
-        route: 'https://www.fixupe.com/dashboard/genai/aitranscriber'
+        route: 'https://crm.myafros.com/dashboard/genai/aitranscriber'
     },
 
     
@@ -105,7 +105,7 @@ export const Projects: ProjectProps[] = [
         database: 'postGreSQL/Pinecone',
         cloud: 'Vercel',
         status: 'Completed',
-        route: 'https://www.fixupe.com/dashboard/genai/voicerecorder'
+        route: 'https://crm.myafros.com/dashboard/genai/voicerecorder'
     },
     {   
         id:5,
@@ -119,7 +119,7 @@ export const Projects: ProjectProps[] = [
         database: 'postGreSQL',
         cloud: 'Vercel',
         status: 'On-going',
-        route: 'https://www.fixupe.com/dashboard/genai/contentwriter'
+        route: 'https://crm.myafros.com/dashboard/genai/contentwriter'
     },
    
 ]

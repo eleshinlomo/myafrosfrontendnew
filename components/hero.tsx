@@ -58,12 +58,12 @@ of technology to create meaningful experiences and solve real life problems.</p>
 
 
 <div className="flex flex-col md:flex-row pt-8 gap-3 ">
-<a href='https://fixupe.com'>
+<a href='https://crm.myafros.com/'>
 <Button variant='outline' size='sm'
 className=" text-black  w-full" 
   >CRM WITH AI</Button>
   </a>
-<a href='https://imgbot.vercel.app'>
+<a href='https://imgbot.myafros.com/'>
 <Button variant='outline' size='sm' className="  text-black w-full  ">
     GENERATE IMAGE
 </Button>
