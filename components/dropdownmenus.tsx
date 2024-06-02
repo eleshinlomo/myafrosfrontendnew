@@ -30,7 +30,7 @@ export const ProjectsDropDown = ()=> {
         <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
           <DropdownMenuRadioItem value="top"><a href='https://imgbot.myafros.com/'>Image bot</a></DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="bottom"><a href='https://crm.myafros.com/'>CRM</a></DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value="right"><a href='https://crm.myafros.com/dashboard/aitranscriber'>Transcriber</a></DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="right"><a href='https://crm.myafros.com/dashboard/genai/aitranscriber'>Transcriber</a></DropdownMenuRadioItem>
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
