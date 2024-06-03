@@ -14,9 +14,9 @@ export const About = () => {
   <p className="text-lg mb-4">
     MyAfros is a dynamic portfolio web application showcasing a 
     comprehensive array of personal projects meticulously 
-    crafted by myself. Spanning from robust CRM systems to 
-    cutting-edge Crypto AI traders and innovative image-generating bots, 
-    each project embodies a blend of creativity, functionality, 
+    crafted. Explore working tools spanning from robust CRM systems to 
+    cutting-edge Transcriber and innovative Image-generating bot. 
+    Each project embodies a blend of creativity, functionality, 
     and technical prowess.
   </p>
   <p className="text-lg mb-4">
