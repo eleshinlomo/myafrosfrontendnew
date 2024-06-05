@@ -75,7 +75,7 @@ export const Projects: ProjectProps[] = [
         status: 'On-going',
         database: 'postGRES',
         cloud: 'Vercel',
-        route: 'https://crm.myafros.com/dashboard/textreaderpage'
+        route: 'https://crm.myafros.com/dashboard/genai/textreaderpage'
     },
     {
     id:4,
