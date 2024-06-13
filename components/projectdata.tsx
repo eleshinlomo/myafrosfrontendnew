@@ -95,7 +95,7 @@ export const Projects: ProjectProps[] = [
     
     {   
         id:4,
-        projectname: "Voice Recorder",
+        projectname: "Token Counter",
         icon: <BotIcon />,
         usecase: "GenAI",
         api: 'REST',
@@ -105,7 +105,7 @@ export const Projects: ProjectProps[] = [
         database: 'postGreSQL/Pinecone',
         cloud: 'Vercel',
         status: 'Completed',
-        route: 'https://crm.myafros.com/dashboard/genai/voicerecorder'
+        route: 'https://ai.myafros.com'
     },
     {   
         id:5,
