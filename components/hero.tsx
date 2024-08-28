@@ -9,13 +9,14 @@ import  Typewriter  from "@/components/typewriter"
 const Hero = ()=>{
 
     const [customText, setCustomText] = useState<Array<string>>([])
+    const link1 = <a>AI-Integrated CRM</a>
 
   useEffect(()=>{
     setCustomText(
       [
-        "Advance AI Models",
-        "Innovative ML Approach",
-        "Modern Technologies"
+        "AI-Integrated CRM",
+        "Image GenAI",
+        "AI Powered store"
       ]
     )
   }, [])

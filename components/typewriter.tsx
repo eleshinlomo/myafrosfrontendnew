@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 
 interface TypewriterProps {
-    customText: string[]
+    customText: string[] | any
 }
 
 const Typewriter = ({customText}: TypewriterProps) => {
